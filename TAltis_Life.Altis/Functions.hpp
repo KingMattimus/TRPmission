@@ -122,6 +122,8 @@ class Life_Client_Core {
         class copLights {};
         class copLoadout {};
         class copMarkers {};
+		class copEnter {};
+		class seizeObjects {};
         class copSearch {};
         class copSiren {};
         class doorAnimate {};
