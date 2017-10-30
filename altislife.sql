@@ -15,8 +15,8 @@ SET time_zone = "+00:00";
 -- Creates database `altislife` unless it already exists and uses `altislife`
 -- Default Schema
 --
-CREATE DATABASE IF NOT EXISTS `altislife` DEFAULT CHARACTER SET utf8mb4;
-USE `altislife`;
+CREATE DATABASE IF NOT EXISTS `altislifet` DEFAULT CHARACTER SET utf8mb4;
+USE `altislifet`;
 
 --
 -- Drop procedures to ensure no conflicts
