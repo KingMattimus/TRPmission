@@ -34,7 +34,10 @@ class Life_Client_Core {
         class survival {};
         class welcomeNotification {};
     };
-
+	class Cam {
+	   file ="core";
+	   class IntroCam {};
+	};
     class Actions {
         file = "core\actions";
         class arrestAction {};
