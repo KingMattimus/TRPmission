@@ -10,7 +10,7 @@
     Change it up so animals repopulate over time.
 */
 
-private["_animalList","_dist","_radius","_zoneName","_unitsNear","_animalsActive"];
+private ["_animalList","_dist","_radius","_zoneName","_unitsNear","_animalsActive"];
 params [
         ["_zoneName","",[""]],
         ["_maxAnimals",10,[0]]
@@ -22,7 +22,7 @@ _radius = (getMarkerSize _zoneName) select 0;
 _dist = _radius + 100;
 _zone = getMarkerPos _zoneName;
 
-if (!isNil "animals" && {count animals != 0}) then {
+if (!isNil "animals" && {!(count animals isEqualTo 0)}) then {
     _maxAnimals = _maxAnimals - count(animals);
 } else {
     animals = [];
