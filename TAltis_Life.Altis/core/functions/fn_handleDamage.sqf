@@ -14,7 +14,9 @@ params [
     ["_projectile","",[""]],
     ["_index",0,[0]]
 ];
-
+private["_curWep"];
+_curWep = "";
+/*
 //Handle the tazer first (Top-Priority).
 if (!isNull _source) then {
     if (_source != _unit) then {
@@ -44,6 +46,26 @@ if (!isNull _source) then {
             };
         };
     };
+};
+*/
+
+if(isPlayer _source && _source isKindOf "Man") then {
+	_curWep = currentWeapon _source;
+	_curMag = currentMagazine _source;
+};
+
+if((_curWep in ["srifle_DMR_06_olive_F","srifle_DMR_03_F","arifle_MXM_Black_F","arifle_MX_Black_F","arifle_MXC_Black_F","srifle_DMR_02_F","arifle_sdar_F","arifle_SPAR_03_blk_F","arifle_AK12_GL_F"]) && (_source getVariable ["nonLethals",true]) && (_projectile != "")) then {
+	if(((getDammage _unit) >= 0.9) || (_damage >= 0.9)) then {
+		_damage = 0.001;
+		[_unit,_source] spawn life_fnc_handleDowned;
+	};
+}else{
+	if((_curWep in ["SMG_02_F","hgun_P07_F","hgun_P07_snds_F"]) && (_projectile != "")) then {
+		if(((getDammage _unit) >= 0.9) || (_damage >= 0.9)) then {
+			_damage = 0.001;
+			[_unit,_source] spawn life_fnc_handleDowned;
+		};
+	};
 };
 
 [] spawn life_fnc_hudUpdate;

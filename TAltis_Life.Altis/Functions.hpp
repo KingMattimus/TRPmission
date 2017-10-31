@@ -188,6 +188,7 @@ class Life_Client_Core {
         class isDamaged {};
         class giveDiff {};
         class handleDamage {};
+        class handleDowned {};
         class handleInv {};
         class handleItem {};
         class hideObj {};
