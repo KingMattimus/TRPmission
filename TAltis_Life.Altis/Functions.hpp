@@ -125,6 +125,8 @@ class Life_Client_Core {
         class copLights {};
         class copLoadout {};
         class copMarkers {};
+		class copEnter {};
+		class seizeObjects {};
         class copSearch {};
         class copSiren {};
         class doorAnimate {};
@@ -189,6 +191,7 @@ class Life_Client_Core {
         class isDamaged {};
         class giveDiff {};
         class handleDamage {};
+        class handleDowned {};
         class handleInv {};
         class handleItem {};
         class hideObj {};
