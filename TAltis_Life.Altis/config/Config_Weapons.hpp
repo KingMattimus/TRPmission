@@ -161,19 +161,30 @@ class WeaponShops {
             { "hgun_P07_F", "", 7500, 3750, "" },
             { "hgun_P07_khk_F", "", 7500, 3750, "" }, //Apex DLC
             { "hgun_Pistol_heavy_01_F", "", 9500, 4750, "call life_coplevel >= 1" },
-            { "SMG_02_ACO_F", "", 30000, 15000, "call life_coplevel >= 2" },
-            { "arifle_MX_F", "", 35000, 17500, "call life_coplevel >= 2" },
-            { "hgun_ACPC2_F", "", 17500, 8750, "call life_coplevel >= 3" },
-            { "arifle_MXC_F", "", 30000, 15000, "call life_coplevel >= 3" },
-            { "srifle_DMR_07_blk_F", "", 32000, 16000, "call life_coplevel >= 3" } //Apex DLC Sniper
+            { "arifle_MX_black_F", "", 35000, 17500, "call life_coplevel >= 2" },
+			{ "arifle_MXC_black_F", "", 30000, 15000, "call life_coplevel >= 2" },
+			{ "arifle_MXM_Black_F", "", 30000, 15000, "call life_coplevel >= 3" },
+            { "srifle_DMR_03_f", "", 17500, 8750, "call life_coplevel >= 4" },
+            { "arifle_MXM_black_F", "", 30000, 15000, "call life_coplevel >= 7" },
+            { "srifle_DMR_07_blk_F", "", 32000, 16000, "call life_coplevel >= 3" },  //Apex DLC Sniper
+            { "arifle_MX_SW_Black_F", "", 32000, 16000, "call life_coplevel >= 7" },
+            { "srifle_GM6_F", "", 32000, 16000, "call life_coplevel >= 7" },
+            { "srifle_DMR_02_F", "", 32000, 16000, "call life_coplevel >= 7" },
+            { "srifle_DMR_03_F", "", 32000, 16000, "call life_coplevel >= 7" },
+            { "srifle_EBR_F", "", 32000, 16000, "call life_coplevel >= 7" },
+            { "arifle_AK12_GL_F", "", 32000, 16000, "call life_coplevel >= 7" },
+            { "arifle_SPAR_03_blk_F", "", 32000, 16000, "call life_coplevel >= 7" },
+            { "srifle_DMR_01_F", "", 32000, 16000, "call life_coplevel >= 7" }
         };
         mags[] = {
             { "16Rnd_9x21_Mag", "", 125, 60, "" },
             { "20Rnd_556x45_UW_mag", $STR_W_mags_TaserRifle, 125, 60, "" },
             { "11Rnd_45ACP_Mag", "", 130, 65, "call life_coplevel >= 1" },
             { "30Rnd_65x39_caseless_mag", "", 130, 65, "call life_coplevel >= 2" },
+            { "30Rnd_65x39_caseless_mag_Tracer", "", 130, 65, "call life_coplevel >= 2" },
             { "30Rnd_9x21_Mag", "", 250, 125, "call life_coplevel >= 2" },
             { "9Rnd_45ACP_Mag", "", 200, 100, "call life_coplevel >= 3" },
+            { "20Rnd_762x51_Mag", "", 200, 100, "call life_coplevel >= 4" },
             { "20Rnd_650x39_Cased_Mag_F", "", 200, 100, "call life_coplevel >= 3" } //Apex DLC
         };
         accs[] = {
@@ -182,8 +193,11 @@ class WeaponShops {
             { "acc_flashlight_pistol", "", 250, 125, "call life_coplevel >= 1" },//Pistol Flashlight
             { "acc_flashlight", "", 750, 375, "call life_coplevel >= 2" },
             { "optic_Holosight", "", 1200, 600, "call life_coplevel >= 2" },
+            { "optic_Hamr", "", 1200, 600, "call life_coplevel >= 2" },
+            { "optic_MRCO", "", 1200, 600, "call life_coplevel >= 2" },
+            { "optic_LRPS", "", 2500, 1250, "call life_coplevel >= 6" },
             { "optic_Arco", "", 2500, 1250, "call life_coplevel >= 2" },
-            { "muzzle_snds_H", "", 2750, 1375, "call life_coplevel >= 2" }
+            { "muzzle_snds_H", "", 2750, 1375, "call life_coplevel >= 7" }
         };
     };
 
