@@ -29,6 +29,16 @@ class CfgFunctions {
         };
     };
 
+	class DynMarket	{
+		file = "\life_server\Functions\DynMarket";
+		class calculatePrices {};
+		class config {};
+		class getUpdate {};
+		class HandleDB {};
+		class playerLogged {};
+		class sleeper {}; 
+					};
+	
     class Life_System {
         tag = "life";
         class Wanted_Sys {
