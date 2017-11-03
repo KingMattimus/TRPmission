@@ -110,7 +110,7 @@ class WeaponShops {
 			{ "srifle_DMR_03_khaki_F", "", 4500, 2250, "" },
 			{ "srifle_DMR_03_woodland_F", "", 4500, 2250, "" },
 			{ "srifle_DMR_06_camo_F", "", 4500, 2250, "" },
-			{ "srifle_EBR_F", "", 4500, 2250, "" },
+			{ "srifle_EBR_F", "", 4500, 2250, "" }
          
 			
 				
