@@ -123,7 +123,7 @@ class CarShops {
             { "C_SUV_01_F", "" },
             { "C_Hatchback_01_sport_F", "call life_coplevel >= 1" },
             { "B_MRAP_01_F", "call life_coplevel >= 2" },
-            { "B_MRAP_01_hmg_F", "call life_coplevel >= 3" }
+            { "B_MRAP_01_hmg_F", "call life_coplevel >= 7" }
         };
     };
 
@@ -383,9 +383,8 @@ class LifeCfgVehicles {
         price = 750000;
         textures[] = {
             { "Black", "cop", {
-                "#(argb,8,8,3)color(0.05,0.05,0.05,1)",
-                "#(argb,8,8,3)color(0.05,0.05,0.05,1)",
-                "#(argb,8,8,3)color(0.05,0.05,0.05,1)"
+                 "#\textures\hunter1",
+                 "#\textures\Hunter2"
             }, "" }
         };
     };
@@ -521,7 +520,7 @@ class LifeCfgVehicles {
                 "#(argb,8,8,3)color(0.6,0.3,0.01,1)"
             }, "" },
             { "Police", "cop", {
-                "#(ai,64,64,1)Fresnel(1.3,7)"
+                "\textures\policeoffroad"
             }, "" }
         };
     };
@@ -569,7 +568,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport06_co.paa"
             }, "" },
             { "Police", "cop", {
-                "#(ai,64,64,1)Fresnel(1.3,7)"
+                "\tetures\policehatch"
             }, "" }
         };
     };
@@ -602,6 +601,9 @@ will modify the virtual space and the price of the vehicle, but other informatio
             }, "" },
             { "Hunter Camo", "civ", {
                 "\a3\soft_f_gamma\Quadbike_01\data\quadbike_01_indp_hunter_co.paa"
+            }, "" },
+			{ "APD", "cop", {
+                "\texture\policequad"
             }, "" },
             { "Rebel Camo", "reb", {
                 "\a3\soft_f_gamma\Quadbike_01\data\quadbike_01_indp_hunter_co.paa"
@@ -732,8 +734,8 @@ will modify the virtual space and the price of the vehicle, but other informatio
         price = 30000;
         textures[] = {
             { "Black", "cop", {
-                "#(argb,8,8,3)color(0.05,0.05,0.05,1)",
-                "#(argb,8,8,3)color(0.05,0.05,0.05,1)"
+               "#\textures\hunter1",
+                 "#\textures\Hunter2"
             }, "" }
         };
     };
@@ -798,6 +800,9 @@ will modify the virtual space and the price of the vehicle, but other informatio
             }, "" },
             { "EMS White", "med", {
                 "#(argb,8,8,3)color(1,1,1,0.8)"
+            }, "" },
+			{ "APD", "cop", {
+                "\texture\policelbd"
             }, "" }
         };
     };

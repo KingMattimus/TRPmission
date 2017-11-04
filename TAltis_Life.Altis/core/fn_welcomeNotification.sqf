@@ -25,11 +25,11 @@ _textSpoiler = _display displayCtrl 1101;
 _text2 = _display displayCtrl 1102;
 
 _message = "";
-_message = _message + "<t align='center' size='8' shadow='0'><img image='textures\armalife.jpg' /></t><br /><br />";
-_message = _message + "Useful links (click on the links to open your browser)<br /><br />";
-_message = _message + " <a href='https://github.com/AsYetUntitled/Framework' color='#56BDD6'>AsYetUntitled</a> -- The official repository for the project.<br /><br />";
-_message = _message + "TeamSpeak 3 address: ADDRESS HERE  <br /><br />";
-_message = _message + "Discord invite: <a href='https://discord.gg/EaB7Jgw' color='#56BDD6'>ArmA RPG Life</a>  <br /><br />";
+_message = _message + "Welcome to <a href='http://www.troleplay.com' color='#5600FF'>troleplay.com</a> Experience Beyond Roleplay!<br /><br />";
+_message = _message + "This is a serious roleplay server so before you spawn in please make sure you read our rules at <a href= 'http://troleplay.com' color='#5600FF'>Tenacious Role Play</a> otherwise you will end up banned and we dont want that!<br /><br />";
+_message = _message + "troleplay.com is now currently running on 5.0.0. We hope you enjoy this update and if you have any issues or concerns, please feel free to join us on Teamspeak!<br />";
+_message = _message + "Sincerely,<br />";
+_message = _message + "Tenacious Role Play's Staff";
 
 //Fill only the first text
 _text1 ctrlSetStructuredText (parseText _message);
