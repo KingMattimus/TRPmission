@@ -6,7 +6,7 @@ class life_news_broadcast {
 
     class controlsBackground {
         class Life_RscTitleBackground: Life_RscText {
-            colorBackground[] = {"(profileNamespace getVariable ['GUI_BCG_RGB_R',0.3843])", "(profileNamespace getVariable ['GUI_BCG_RGB_G',0.7019])", "(profileNamespace getVariable ['GUI_BCG_RGB_B',0.8862])", "(profileNamespace getVariable ['GUI_BCG_RGB_A',0.7])"};
+            colorBackground[] = {1,0.57, 0.01, 0.7};
             idc = -1;
             x = 0.1;
             y = 0.2;

@@ -7,7 +7,7 @@ class Life_FuelStat {
 
     class controlsBackground {
         class Life_RscTitleBackground: Life_RscText    {
-            colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", "(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
+            colorBackground[] = {1,0.57, 0.01, 0.7};
             idc = -1;
             x = 0.1;
             y = 0.2;
@@ -36,7 +36,7 @@ class Life_FuelStat {
         class VehicleTitleBox: Life_RscText {
             idc = -1;
             text = "$STR_GUI_ShopStock";
-            colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", "(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
+            colorBackground[] = {1,0.57, 0.01, 0.7};
             x = 0.11;
             y = 0.26;
             w = 0.32;
@@ -46,7 +46,7 @@ class Life_FuelStat {
         class VehicleInfoHeader: Life_RscText {
             idc = 20330;
             text = "$STR_GUI_VehInfo";
-            colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", "(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
+            colorBackground[] = {1,0.57, 0.01, 0.7};
             x = 0.46;
             y = 0.26;
             w = 0.42;

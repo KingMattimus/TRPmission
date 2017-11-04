@@ -9,7 +9,7 @@ class pInteraction_Menu {
 
     class controlsBackground {
         class RscTitleBackground: life_RscText {
-            colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", "(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
+            colorBackground[] = {1,0.57, 0.01, 0.7};
             idc = -1;
             x = BGX;
             y = BGY;
@@ -146,7 +146,7 @@ class vInteraction_Menu {
 
     class controlsBackground {
         class RscTitleBackground: life_RscText {
-            colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", "(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
+            colorBackground[] = {1,0.57, 0.01, 0.7};
             idc = -1;
             x = BGX;
             y = BGY;
