@@ -18,7 +18,7 @@ class playerSettings {
 		};
 		
 		class Life_RscTitleBackground: Life_RscText {
-            colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", "(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
+            colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", "(profilenamespace getvariable ['GUI_BCG_RGB_A',0])"};
             idc = -1;
             x = 0.1;
             y = 0.2;
@@ -65,7 +65,7 @@ class playerSettings {
     class controls {
         class itemHeader: Life_RscText {
             idc = -1;
-            colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
+            colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',1])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.5719])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.1])", 0.5};
             text = "$STR_PM_cItems";
             sizeEx = 0.04;
             x = 0.62;
@@ -76,7 +76,7 @@ class playerSettings {
 
         class licenseHeader: Life_RscText {
             idc = -1;
-            colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
+            colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',1])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.5719])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.1])", 0.5};
             text = "$STR_PM_Licenses";
             sizeEx = 0.04;
             x = 0.336;
@@ -87,7 +87,7 @@ class playerSettings {
 
         class moneySHeader: Life_RscText {
             idc = -1;
-            colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
+            colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',1])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.5719])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.1])", 0.5};
             text = "$STR_PM_MoneyStats";
             sizeEx = 0.04;
             x = 0.11;
@@ -126,7 +126,7 @@ class playerSettings {
         class moneyDrop: Life_RscButtonMenu {
             idc = 2001;
             text = "$STR_Global_Give";
-            colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
+            colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',1])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.5719])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.1])", 0.5};
             onButtonClick = "[] call life_fnc_giveMoney";
             sizeEx = 0.025;
             x = 0.135;
@@ -157,7 +157,7 @@ class playerSettings {
         class DropButton: Life_RscButtonMenu {
             idc = 2002;
             text = "$STR_Global_Give";
-            colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
+            colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',1])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.5719])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.1])", 0.5};
             onButtonClick = "[] call life_fnc_giveItem;";
             x = 0.765;
             y = 0.70;
@@ -167,7 +167,7 @@ class playerSettings {
 
         class UseButton: Life_RscButtonMenu {
             text = "$STR_Global_Use";
-            colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
+            colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',1])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.5719])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.1])", 0.5};
             onButtonClick = "[] call life_fnc_useItem;";
             x = 0.62;
             y = 0.70;
@@ -177,7 +177,7 @@ class playerSettings {
 
         class RemoveButton: Life_RscButtonMenu {
             text = "$STR_Global_Remove";
-            colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
+            colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',1])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.5719])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.1])", 0.5};
             onButtonClick = "[] call life_fnc_removeItem;";
             x = 0.475;
             y = 0.70;
