@@ -520,7 +520,7 @@ class LifeCfgVehicles {
                 "#(argb,8,8,3)color(0.6,0.3,0.01,1)"
             }, "" },
             { "Police", "cop", {
-                "\textures\policeoffroad"
+                "\textures\policeoffroad.jpg"
             }, "" }
         };
     };
@@ -568,7 +568,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport06_co.paa"
             }, "" },
             { "Police", "cop", {
-                "\tetures\policehatch"
+                "\tetures\policehatch.jpg"
             }, "" }
         };
     };
@@ -603,7 +603,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "\a3\soft_f_gamma\Quadbike_01\data\quadbike_01_indp_hunter_co.paa"
             }, "" },
 			{ "APD", "cop", {
-                "\texture\policequad"
+                "\texture\policequad.jpg"
             }, "" },
             { "Rebel Camo", "reb", {
                 "\a3\soft_f_gamma\Quadbike_01\data\quadbike_01_indp_hunter_co.paa"
@@ -734,8 +734,8 @@ will modify the virtual space and the price of the vehicle, but other informatio
         price = 30000;
         textures[] = {
             { "Black", "cop", {
-                 "#\textures\hunter1",
-                 "#\textures\Hunter2"
+                 "\textures\hunter1.jpg",
+                 "\textures\Hunter2.jpg"
             }, "" }
         };
     };
@@ -802,7 +802,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "#(argb,8,8,3)color(1,1,1,0.8)"
             }, "" },
 			{ "APD", "cop", {
-                "\texture\policelb"
+                "\texture\policelb.jpg"
             }, "" }
         };
     };
