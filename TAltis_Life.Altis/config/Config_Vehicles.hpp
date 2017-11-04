@@ -383,8 +383,8 @@ class LifeCfgVehicles {
         price = 750000;
         textures[] = {
             { "Black", "cop", {
-                 "#\textures\hunter1",
-                 "#\textures\Hunter2"
+                 "textures\Hunter1.jpg",
+                 "textures\Hunter2.jpg"
             }, "" }
         };
     };
@@ -520,7 +520,7 @@ class LifeCfgVehicles {
                 "#(argb,8,8,3)color(0.6,0.3,0.01,1)"
             }, "" },
             { "Police", "cop", {
-                "\textures\policeoffroad.jpg"
+                "textures\policeoffroad.jpg"
             }, "" }
         };
     };
@@ -568,7 +568,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport06_co.paa"
             }, "" },
             { "Police", "cop", {
-                "\tetures\policehatch.jpg"
+                "textures\policehatch.jpg"
             }, "" }
         };
     };
