@@ -103,19 +103,11 @@ class WeaponShops {
 			{"srifle_DMR_03_multicam_F" , "", 4500, 2250, "" },
 			
 			{ "LMG_Mk200_F", "", 4500, 2250, "" },
-            { "200Rnd_65x39_cased_Box"
-			{ "200Rnd_65x39_cased_Box_Tracer"
-			
 			{ "srifle_DMR_03_multicam_F", "", 4500, 2250, "" },
 			{ "srifle_DMR_03_khaki_F", "", 4500, 2250, "" },
 			{ "srifle_DMR_03_woodland_F", "", 4500, 2250, "" },
 			{ "srifle_DMR_06_camo_F", "", 4500, 2250, "" },
-			{ "srifle_EBR_F", "", 4500, 2250, "" }
-         
-			
-				
-		
-      
+			{ "srifle_EBR_F", "", 4500, 2250, "" }      
         };
         mags[] = {
             { "30Rnd_556x45_Stanag", "", 300, 150, "" },
