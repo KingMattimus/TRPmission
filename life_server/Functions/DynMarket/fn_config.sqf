@@ -40,7 +40,7 @@ DYNMARKET_Items_Groups =
 	],
 	["Illegal", 
 		[
-			/*["peach",-1,30,100]*/
+			/*["peach",1,30,100]*/
 		],
 		0.5
 	]
@@ -54,30 +54,32 @@ DYNMARKET_Items_ToTrack        =
 	["apple",25],
 	["peach",50],
 	["tbacon",125],
-	["donuts",130],
+	["donut",130],
 	["rabbit_raw",150],
-	["rabbit",170],
+	["rabbit_grilled",170],
 	["ornate_raw",190],
-	["ornate",190],
+	["ornate_grilled",190],
 	["mackerel_raw",190],
-	["mackerel",190],
+	["mackerel_grilled",190],
 	["tuna_raw",190],
-	["tuna",190],
+	["tuna_grilled",190],
 	["mullet_raw",190],
-	["mullet",200],
+	["mullet_fried",200],
 	["catshark_raw",200],
-	["catshark",200],
+	["catshark_Fried",200],
 	["turtle_soup",200],
 	["hen_raw",200],
-	["hen",200],
+	["hen_fried",200],
 	["rooster_raw",210],
 	["sheep_raw",210],
-	["sheep",155],
+	["sheep_grilled",155],
 	["goat_raw",155],
-	["goat",300],
+	["goat_grilled",300],
+	
 	["redgull",1500],
 	["coffee",10],
 	["waterBottle",10],
+	
 	["pickaxe",350],
 	["fuelFull",500],
 	["spikeStrip",1200],
@@ -88,6 +90,7 @@ DYNMARKET_Items_ToTrack        =
 	["defusekit",2500],
 	["storagesmall",75000],
 	["storagebig",15000],
+	
 	["oil_processed",1200],
 	["copper_refined",1700],
 	["iron_refined",1650],
@@ -95,6 +98,7 @@ DYNMARKET_Items_ToTrack        =
 	["glass",1450],
 	["diamond_cut",2530],
 	["cement",2350],
+	
 	["heroin_processed",5000],
 	["marijuana",5250],
 	["cocaine_processed",5300]
