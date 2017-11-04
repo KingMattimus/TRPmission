@@ -154,3 +154,4 @@ if (LIFE_SETTINGS(getNumber,"player_advancedLog") isEqualTo 1) then {
 
 closeDialog 0; //Exit the menu.
 true;
+["VehiclePurchased"] spawn mav_ttm_fnc_addExp;

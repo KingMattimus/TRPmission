@@ -126,6 +126,8 @@ life_fnc_RequestClientId = player;
 publicVariableServer "life_fnc_RequestClientId"; //Variable OwnerID for HeadlessClient
 
 [] spawn life_fnc_survival;
+waitUntil {(missionNamespace getVariable ["life_perksInitialized", true])};
+life_paycheck = life_paycheck * (missionNamespace getVariable ["mav_ttm_var_paycheckMultiplier", 1]);
 
 [] spawn {
     for "_i" from 0 to 1 step 0 do {
