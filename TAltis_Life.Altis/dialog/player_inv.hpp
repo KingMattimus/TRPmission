@@ -18,7 +18,7 @@ class playerSettings {
 		};
 		
 		class Life_RscTitleBackground: Life_RscText {
-            colorBackground[] = {{1, .57, 0.01, 0};
+            colorBackground[] = {1, .57, 0.01, 0};
             idc = -1;
             x = 0.1;
             y = 0.2;
