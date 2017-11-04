@@ -24,6 +24,7 @@ switch (playerSide) do {
     case independent: {
         ctrlShow[2012,false];
         ctrlShow[2011,false];
+		ctrlShow[3025,false];
     };
 };
 
