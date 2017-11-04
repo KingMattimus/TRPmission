@@ -37,7 +37,7 @@ class CfgFunctions {
 		class HandleDB {};
 		class playerLogged {};
 		class sleeper {}; 
-					};
+};
 	
     class Life_System {
         tag = "life";
