@@ -78,7 +78,12 @@ class VirtualShops {
         conditions = "";
         items[] = { "salema_raw", "salema", "ornate_raw", "ornate", "mackerel_raw", "mackerel", "tuna_raw", "tuna", "mullet_raw", "mullet", "catshark_raw", "catshark" };
     };
-
+	class commercial {
+        name = "STR_Shops_Commercial";
+        side = "civ";
+        conditions = "";
+        items[] = { "glass","iron_refined", "copper_refined" , "diamond_uncut", "diamond_cut" , "salt_refined" , "cement" };
+    };
     class glass {
         name = "STR_Shops_Glass";
         side = "civ";

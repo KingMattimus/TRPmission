@@ -223,6 +223,9 @@
             <Portuguese>Mercado de Peixes</Portuguese>
             <Polish>Sklep Rybny</Polish>
         </Key>
+		    <Key ID="STR_Shops_Commercial">
+            <Original>Commercial Trader</Original>
+		</Key>
         <Key ID="STR_Shops_Glass">
             <Original>Glass Trader</Original>
             <Czech>sklo Trader</Czech>
