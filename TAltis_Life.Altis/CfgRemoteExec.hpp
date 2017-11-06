@@ -158,6 +158,8 @@ class CfgRemoteExec {
         F(BIS_fnc_effectKilledSecondaries,ANYONE)
         F(life_fnc_animSync,ANYONE)
         F(life_fnc_broadcast,ANYONE)
+		F(life_fnc_breakoutTimer,ANYONE)
+		F(life_fnc_jailBreakoutCompleted,ANYONE)
         F(life_fnc_colorVehicle,ANYONE)
         F(life_fnc_corpse,ANYONE)
         F(life_fnc_demoChargeTimer,ANYONE)
