@@ -67,6 +67,10 @@ if((_curWep in ["srifle_DMR_06_olive_F","srifle_DMR_03_F","arifle_MXM_Black_F","
 		};
 	};
 };
-
+if(vehicle _source isKindOf "LandVehicle") then {
+ if(_source != _unit AND {alive _unit} AND {isPlayer _source}) then {
+ _damage = 0.001;
+ };
+};
 [] spawn life_fnc_hudUpdate;
 _damage;
