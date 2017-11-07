@@ -53,7 +53,7 @@ jailDefused = false;
 _ok = true;
 while {true} do {
 	if(round(_time - time) < 1) exitWith {_ok = true;};
-	 if (_cP >= 1 || !alive player) exitWith {};
+	if (!alive player) exitWith {};
     if (life_istazed) exitWith {}; //Tazed
     if (life_isknocked) exitWith {}; //Knocked
     if (life_interrupted) exitWith {};
