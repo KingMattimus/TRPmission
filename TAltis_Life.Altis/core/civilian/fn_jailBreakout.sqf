@@ -9,7 +9,7 @@ if(!alive player) exitWith {};
 if(playerSide != civilian) exitWith {hint "Only civilians can do this!";};
 if(vehicle player != player) exitWith {hint "You need to be outside of your vehicle!";};
 if(currentWeapon player == "" || currentWeapon player == "Binocular") exitWith {hint "The guards do not feel threatened in any way!";};
-if({side _x == west} count playableUnits < 2) exitWith {hint "There needs to be two or more cops online for you to initiate a robbery!";}; // Spectral does not want a limit on when to jailbreak
+//if({side _x == west} count playableUnits < 2) exitWith {hint "There needs to be two or more cops online for you to initiate a robbery!";}; // Spectral does not want a limit on when to jailbreak
 if(_unit getVariable["inbreakout",false]) exitWith {hint "Someone is already breaking out the prisoners!";};
 if(time - (_unit getVariable["lastbreakout",-9000]) < 30*60) exitWith {hint "The jail is currently under lockdown and you are unable to get near to the walls."};
 
@@ -67,7 +67,10 @@ _unit setVariable["inbreakout",false,true];
 if(_ok) then {
 	[[profileName],"life_fnc_jailBreakoutCompleted",true,false] spawn life_fnc_MP;
 	//unlock jail here 
-	
+	prisondoor1 setVariable ['bis_disabled_Door_1',1,false];
+	prisondoor2 setVariable ['bis_disabled_Door_1',1,false];
+	prisondoor3 setVariable ['bis_disabled_Door_1',1,false];
+	prisondoor4 setVariable ['bis_disabled_Door_1',1,false];
 } else {
 	hint "You failed to break out any prisoners.";	
 	};
