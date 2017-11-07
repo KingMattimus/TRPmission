@@ -39,25 +39,25 @@ switch (playerSide) do {
         if (uniform player isEqualTo "U_Rangemaster") then {
             _skinName = "textures\cop_uniform_1.jpg";
             if (LIFE_SETTINGS(getNumber,"cop_extendedSkins") isEqualTo 1) then {
-                if ((FETCH_CONST(life_coplevel) = 1)) then {
+                if ((FETCH_CONST(life_coplevel)) = 1)) then {
                     _skinName = "textures\cop_uniform_1.jpg";
                 };
-				 if ((FETCH_CONST(life_coplevel) = 2)) then {
+				 if ((FETCH_CONST(life_coplevel)) = 2)) then {
                     _skinName = "textures\cop_uniform_1.jpg";
                 };
-				 if ((FETCH_CONST(life_coplevel) = 3)) then {
+				 if ((FETCH_CONST(life_coplevel)) = 3)) then {
                    _skinName = "textures\cop_uniform_2.jpg";
                 };
-				 if ((FETCH_CONST(life_coplevel) = 4)) then {
+				 if ((FETCH_CONST(life_coplevel)) = 4)) then {
                     _skinName = "textures\cop_uniform_2.jpg";
                 };
-				 if ((FETCH_CONST(life_coplevel) = 5)) then {
+				 if ((FETCH_CONST(life_coplevel)) = 5)) then {
                     _skinName = "textures\cop_uniform_3.jpg";
                 };
-				 if ((FETCH_CONST(life_coplevel) = 6)) then {
+				 if ((FETCH_CONST(life_coplevel)) = 6)) then {
                     _skinName = "textures\cop_uniform_3.jpg";
                 };
-				 if ((FETCH_CONST(life_coplevel) = 7)) then {
+				 if ((FETCH_CONST(life_coplevel)) = 7)) then {
                     _skinName = "textures\cop_uniform_3.jpg";
                 };
             };
