@@ -56,7 +56,7 @@ while {true} do {
 	if (jailDefused) exitWith {_ok = false;};
 	if(!alive player) exitWith {_ok = false;};
 	if(player distance _unit > 2500) exitWith {_ok = false;};
-	if(life_isDowned) exitWith {_ok = false;};
+	if(downed) exitWith {_ok = false;};
 	if(player getVariable["restrained",false]) exitWith {_ok = false;};
 	sleep 1;
 };
