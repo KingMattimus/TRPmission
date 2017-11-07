@@ -14,7 +14,8 @@ _action = [
 if(_action) then {
 	hint "You decided to run for it!";
 	life_escape = true;
-	player setPos (getMarkerPos "jail_escape");
+	life_arrested = false;
+	
 } else {
 	hint "You decided to serve your time.";
 	life_escape = false;
