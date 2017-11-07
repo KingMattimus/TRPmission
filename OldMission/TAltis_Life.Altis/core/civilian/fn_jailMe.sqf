@@ -58,7 +58,7 @@ while {true} do
 	{
 		_esc=true;
 	};
-	if(player distance (getMarkerPos "jail_marker") > 40) then
+	if(player distance (getMarkerPos "jail_marker") > 40 && !life_escape) then
 	{
 		player setPosAsl [16734,13619,12.5];
 	};

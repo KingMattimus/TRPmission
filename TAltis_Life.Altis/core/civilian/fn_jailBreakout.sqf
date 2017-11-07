@@ -2,6 +2,7 @@
 /* 
 	File: fn_jailBreakout.sqf
 */
+private["_pdoor1","_pdoor2","_pdoor3","_pdoor4"]
 _unit = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
 _pdoor1 = missionNamespace getVariable [prisondoor1 , objNull];
 _pdoor2 = missionNamespace getVariable [prisondoor2 , objNull];
