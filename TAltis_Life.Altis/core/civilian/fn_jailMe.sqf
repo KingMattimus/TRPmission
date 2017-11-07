@@ -26,6 +26,7 @@ _bail = false;
         sleep (10 * 60);
     } else {
         sleep (5 * 60);
+		
     };
     life_canpay_bail = true;
 };
@@ -45,7 +46,11 @@ for "_i" from 0 to 1 step 0 do {
     if (player distance (getMarkerPos "jail_marker") > _escDist) exitWith {
         _esc = true;
     };
-
+	if(player distance (getMarkerPos "jail_marker") > 40  && !life_escape ) then
+	{
+		player setPosAsl [(getMarkerPos "jail_marker")];
+	};
+	
     if (life_bail_paid) exitWith {
         _bail = true;
     };

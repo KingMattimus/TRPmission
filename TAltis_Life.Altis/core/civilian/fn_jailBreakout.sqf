@@ -3,7 +3,10 @@
 	File: fn_jailBreakout.sqf
 */
 _unit = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
-
+_pdoor1 = missionNamespace getVariable [_prisondoor1 , objNull];
+_pdoor2 = missionNamespace getVariable [_prisondoor2 , objNull];
+_pdoor3 = missionNamespace getVariable [_prisondoor3 , objNull];
+_pdoor4 = missionNamespace getVariable [_prisondoor4 , objNull];
 if(isNull _unit) exitWith {};
 if(!alive player) exitWith {};
 if(playerSide != civilian) exitWith {hint "Only civilians can do this!";};
@@ -64,10 +67,10 @@ _unit setVariable["inbreakout",false,true];
 if(_ok) then {
 	[] remoteExec ["life_fnc_jailBreakoutCompleted",[player]];
 	//unlock jail here 
-	prisondoor1 setVariable ['bis_disabled_Door_1',1,false];
-	prisondoor2 setVariable ['bis_disabled_Door_1',1,false];
-	prisondoor3 setVariable ['bis_disabled_Door_1',1,false];
-	prisondoor4 setVariable ['bis_disabled_Door_1',1,false];
+	_pdoor1 setVariable ['bis_disabled_Door_1',1,false];
+	_pdoor2 setVariable ['bis_disabled_Door_1',1,false];
+	_pdoor3 setVariable ['bis_disabled_Door_1',1,false];
+	_pdoor4 setVariable ['bis_disabled_Door_1',1,false];
 } else {
 	hint "You failed to break out any prisoners.";	
 	};
