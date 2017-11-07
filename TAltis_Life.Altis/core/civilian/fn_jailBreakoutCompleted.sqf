@@ -1,3 +1,5 @@
+#include "..\..\script_macros.hpp"
+
 /*
 	File: fn_jailBreakoutCompleted.sqf
 */
