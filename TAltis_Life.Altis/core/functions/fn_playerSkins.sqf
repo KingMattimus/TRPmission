@@ -36,6 +36,7 @@ switch (playerSide) do {
     };
 
     case west: {
+	if (uniform player isEqualTo "U_Rangemaster") then {
         if (FETCH_CONST(life_coplevel) == 1) then {
                     _skinName = ["textures\cop_uniform_","1",".jpg"] joinString "";
                 };
@@ -58,6 +59,7 @@ switch (playerSide) do {
                     _skinName = ["textures\cop_uniform_","3",".jpg"] joinString "";
                 };
 		player setObjectTextureGlobal [0, _skinName];
+		};
     };
 
     case independent: {
