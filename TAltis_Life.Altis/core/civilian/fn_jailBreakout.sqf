@@ -17,12 +17,10 @@ _unit setVariable["lastbreakout",time,true];
 _unit setVariable["inbreakout",true,true];
 
  //Give the cops a hint
-  [0,"%1 is attempting to break prisoners out of the jail! Go and stop them fast!",true,[]] remoteExecCall ["life_fnc_broadcast",west];
+//  [0,"%1 is attempting to break prisoners out of the jail! Go and stop them fast!",true,[]] remoteExecCall ["life_fnc_broadcast",west];
   hint "You are currently hacking the prison gates, you need to stay within 1000 meters of your current location or you will stop the breakout. The breakout will take around four minutes to complete.";
 
-[[_unit,player],"life_fnc_breakoutTimer",group player, false] spawn life_fnc_MP; //Show the countdown to all prisoners, cops and the player.
-[[_unit,player],"life_fnc_breakoutTimer",west, false] spawn life_fnc_MP;
-
+[] remoteExec ["life_fnc_demoChargeTimer",[west,player]];
 
 // Charge all the players in the group with doing a jailbreak
 {
@@ -65,7 +63,7 @@ while {true} do {
 _unit setVariable["inbreakout",false,true]; 
 
 if(_ok) then {
-	[[profileName],"life_fnc_jailBreakoutCompleted",true,false] spawn life_fnc_MP;
+	[] remoteExec ["life_fnc_jailBreakoutCompleted",[player]];
 	//unlock jail here 
 	prisondoor1 setVariable ['bis_disabled_Door_1',1,false];
 	prisondoor2 setVariable ['bis_disabled_Door_1',1,false];
