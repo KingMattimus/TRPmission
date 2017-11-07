@@ -36,33 +36,30 @@ switch (playerSide) do {
     };
 
     case west: {
-        if (uniform player isEqualTo "U_Rangemaster") then {
-            _skinName = "textures\cop_uniform_1.jpg";
-            if (LIFE_SETTINGS(getNumber,"cop_extendedSkins") isEqualTo 1) then {
-                if (FETCH_CONST(life_coplevel) = 1) then {
+	if (uniform player isEqualTo "U_Rangemaster") then {
+        if (FETCH_CONST(life_coplevel) == 1) then {
                     _skinName = ["textures\cop_uniform_","1",".jpg"] joinString "";
                 };
-				 if (FETCH_CONST(life_coplevel) >= 1) then {
+		if (FETCH_CONST(life_coplevel) == 2) then {
                     _skinName = ["textures\cop_uniform_","1",".jpg"] joinString "";
                 };
-				 if (FETCH_CONST(life_coplevel) >= 1) then {
-                   _skinName = ["textures\cop_uniform_","2",".jpg"] joinString "";
-                };
-				 if (FETCH_CONST(life_coplevel) >= 1) then {
+		if (FETCH_CONST(life_coplevel) == 3) then {
                     _skinName = ["textures\cop_uniform_","2",".jpg"] joinString "";
                 };
-				 if (FETCH_CONST(life_coplevel) >= 1) then {
+		if (FETCH_CONST(life_coplevel) == 4) then {
+                    _skinName = ["textures\cop_uniform_","2",".jpg"] joinString "";
+                };
+		if (FETCH_CONST(life_coplevel) == 5) then {
                     _skinName = ["textures\cop_uniform_","3",".jpg"] joinString "";
                 };
-				 if (FETCH_CONST(life_coplevel) >= 1) then {
+		if (FETCH_CONST(life_coplevel) == 6) then {
                     _skinName = ["textures\cop_uniform_","3",".jpg"] joinString "";
                 };
-				 if (FETCH_CONST(life_coplevel) >= 1) then {
+		if (FETCH_CONST(life_coplevel) == 7) then {
                     _skinName = ["textures\cop_uniform_","3",".jpg"] joinString "";
                 };
-            };
-            player setObjectTextureGlobal [0, _skinName];
-        };
+		player setObjectTextureGlobal [0, _skinName];
+		};
     };
 
     case independent: {
