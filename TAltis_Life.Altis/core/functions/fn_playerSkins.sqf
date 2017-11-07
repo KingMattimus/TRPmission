@@ -40,25 +40,25 @@ switch (playerSide) do {
             _skinName = "textures\cop_uniform_1.jpg";
             if (LIFE_SETTINGS(getNumber,"cop_extendedSkins") isEqualTo 1) then {
                 if (FETCH_CONST(life_coplevel) = 1) then {
-                    _skinName = ["textures\cop_uniform_","1",".jpg"] joinString "";
+                    _skinName = "textures\cop_uniform_1.jpg";
                 };
-				 if (FETCH_CONST(life_coplevel) >= 1) then {
-                    _skinName = ["textures\cop_uniform_","1",".jpg"] joinString "";
+				 if (FETCH_CONST(life_coplevel) = 2) then {
+                    _skinName = "textures\cop_uniform_1.jpg";
                 };
-				 if (FETCH_CONST(life_coplevel) >= 1) then {
-                   _skinName = ["textures\cop_uniform_","2",".jpg"] joinString "";
+				 if (FETCH_CONST(life_coplevel) = 3) then {
+                   _skinName = "textures\cop_uniform_2.jpg";
                 };
-				 if (FETCH_CONST(life_coplevel) >= 1) then {
-                    _skinName = ["textures\cop_uniform_","2",".jpg"] joinString "";
+				 if (FETCH_CONST(life_coplevel) = 4) then {
+                    _skinName = "textures\cop_uniform_2.jpg";
                 };
-				 if (FETCH_CONST(life_coplevel) >= 1) then {
-                    _skinName = ["textures\cop_uniform_","3",".jpg"] joinString "";
+				 if (FETCH_CONST(life_coplevel) = 5) then {
+                    _skinName = "textures\cop_uniform_3.jpg";
                 };
-				 if (FETCH_CONST(life_coplevel) >= 1) then {
-                    _skinName = ["textures\cop_uniform_","3",".jpg"] joinString "";
+				 if (FETCH_CONST(life_coplevel) = 6) then {
+                    _skinName = "textures\cop_uniform_3.jpg";
                 };
-				 if (FETCH_CONST(life_coplevel) >= 1) then {
-                    _skinName = ["textures\cop_uniform_","3",".jpg"] joinString "";
+				 if (FETCH_CONST(life_coplevel) = 7) then {
+                    _skinName = "textures\cop_uniform_3.jpg";
                 };
             };
             player setObjectTextureGlobal [0, _skinName];
