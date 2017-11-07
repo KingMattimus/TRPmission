@@ -19,7 +19,7 @@ _unit setVariable["inbreakout",true,true];
 //Give the cops a hint
 [0,"%1 is attempting to break prisoners out of the jail! Go and stop them fast!",true,[]] remoteExecCall ["life_fnc_broadcast",west];
 hint "You are currently hacking the prison gates, you need to stay within 1000 meters of your current location or you will stop the breakout. The breakout will take around four minutes to complete.";
-
+[[1,2],"STR_ISTR_AlertJail",true,[]] remoteExecCall ["life_fnc_broadcast",RCLIENT];
 [] remoteExec ["life_fnc_demoChargeTimer",[west,player]];
 
 // Charge all the players in the group with doing a jailbreak
@@ -53,11 +53,10 @@ jailDefused = false;
 _ok = true;
 while {true} do {
 	if(round(_time - time) < 1) exitWith {_ok = true;};
-	if (jailDefused) exitWith {_ok = false;};
-	if(!alive player) exitWith {_ok = false;};
-	if(player distance _unit > 2500) exitWith {_ok = false;};
-	if(downed) exitWith {_ok = false;};
-	if(player getVariable["restrained",false]) exitWith {_ok = false;};
+	 if (_cP >= 1 || !alive player) exitWith {};
+    if (life_istazed) exitWith {}; //Tazed
+    if (life_isknocked) exitWith {}; //Knocked
+    if (life_interrupted) exitWith {};
 	sleep 1;
 };
 _unit setVariable["inbreakout",false,true]; 
