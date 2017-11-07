@@ -33,15 +33,15 @@ if(!isNil "life_seatbelt") then {
     };
 };
 
-if(!isNil "life_fadeSound") then
+
+
+if((player getVariable["Earplugs",0]) > 0) then
 {
-	if((player getVariable["Earplugs",0]) > 0) then
-	{
-		LIFEctrl(IDC_LIFE_BAR_Speaker) ctrlSetText "icons\earplugsY.paa";
-	} else {
-		LIFEctrl(IDC_LIFE_BAR_Speaker) ctrlSetText "icons\earplugsN.paa";
-	};
+	LIFEctrl(IDC_LIFE_BAR_Speaker) ctrlSetText "icons\earplugsY.paa";
+} else {
+	LIFEctrl(IDC_LIFE_BAR_Speaker) ctrlSetText "icons\earplugsN.paa";
 };
+
 
 if(!isNil "life_thirst") then
 {

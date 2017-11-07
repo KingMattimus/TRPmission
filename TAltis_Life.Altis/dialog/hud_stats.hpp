@@ -11,8 +11,7 @@
 #define IDC_LIFE_BAR_HEALTH_RING 3202
 //#define IDC_LIFE_BAR_POOP 4202
 #define IDC_LIFE_BAR_Speaker 3007
-//#define IDC_LIFE_BAR_SeatBelt 4203
-
+#define IDC_LIFE_BAR_SeatBelt 4203
 
 class playerHUD {
 	idd = -1;

@@ -68,5 +68,10 @@ if((_curWep in ["srifle_DMR_06_olive_F","srifle_DMR_03_F","arifle_MXM_Black_F","
 	};
 };
 
+if ((vehicle _unit) isKindOf "Car" && (isNull _source || _source isEqualTo _unit)) then
+{
+	_damage = if (life_seatbelt) then { _damage / 2 } else { _damage};
+};
+
 [] spawn life_fnc_hudUpdate;
 _damage;
