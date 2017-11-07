@@ -16,14 +16,14 @@ if(time - (_unit getVariable["lastbreakout",-9000]) < 30*60) exitWith {hint "The
 _unit setVariable["lastbreakout",time,true];
 _unit setVariable["inbreakout",true,true];
 
- //Give the cops a hint
-//  [0,"%1 is attempting to break prisoners out of the jail! Go and stop them fast!",true,[]] remoteExecCall ["life_fnc_broadcast",west];
-  hint "You are currently hacking the prison gates, you need to stay within 1000 meters of your current location or you will stop the breakout. The breakout will take around four minutes to complete.";
+//Give the cops a hint
+[0,"%1 is attempting to break prisoners out of the jail! Go and stop them fast!",true,[]] remoteExecCall ["life_fnc_broadcast",west];
+hint "You are currently hacking the prison gates, you need to stay within 1000 meters of your current location or you will stop the breakout. The breakout will take around four minutes to complete.";
 
 [] remoteExec ["life_fnc_demoChargeTimer",[west,player]];
 
 // Charge all the players in the group with doing a jailbreak
-{
+/*{
 	if (EQUAL(group _x,group player)) then {
 		        if (life_HC_isActive) then {
             [getPlayerUID player,profileName,"26"] remoteExecCall ["HC_fnc_wantedAdd",HC_Life];
@@ -31,7 +31,7 @@ _unit setVariable["inbreakout",true,true];
             [getPlayerUID player,profileName,"26"] remoteExecCall ["life_fnc_wantedAdd",RSERV];
         };
 	};
-} foreach playableUnits;
+} foreach playableUnits; */
 
 
 /*
