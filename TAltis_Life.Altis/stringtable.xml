@@ -4779,6 +4779,20 @@
             <Portuguese>Você pagou a fiança e agora está livre.</Portuguese>
             <Polish>Zapłaciłeś kaucję jesteś wolny.</Polish>
         </Key>
+		<Key ID="STR_Jail_EscapeNOTF">
+			<Original>%1 has escaped from jail!</Original>
+			<German>%1 ist aus dem Gefängnis ausgebrochen!</German>
+			<French>%1 s'est échappé de prison!</French>
+			<Italian>%1 è scappato dalla prigione!</Italian>
+			<Portuguese>%1 escapou da prisão</Portuguese>
+		</Key>
+		<Key ID="STR_Jail_EscapeSelf">
+			<Original>You have escaped from jail, you still retain your previous crimes and now have a count of escaping jail.</Original>
+			<German>Du bist aus dem Gefängnis ausgebrochen, die Polizei sucht bereits wegen deiner früheren Verbrechen und Gefängnisausbruch nach dir.</German>
+			<French>Vous vous êtes échappé de prison, vous conserver toujours vos crimes précédents et ils savent maintenant que vous vous êtes échappé de prison.</French>
+			<Italian>Sei scappato di prigione, rimarrai ricercato per i crimini da te commessi in precedenza e in aggiunta per essere scappato di prigione.</Italian>
+			<Portuguese>Você escapou da prisão, agora você é procurado por esse crime e todos os outros que tinha cometido anteriormente</Portuguese>
+		</Key>
     </Package>
     <Package name="Civ_Strings">
         <Key ID="STR_Civ_KnockedOut">

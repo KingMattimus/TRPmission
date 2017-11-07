@@ -9,7 +9,6 @@ if(!alive player) exitWith {};
 if(playerSide != civilian) exitWith {hint "Only civilians can do this!";};
 if(vehicle player != player) exitWith {hint "You need to be outside of your vehicle!";};
 if(currentWeapon player == "" || currentWeapon player == "Binocular") exitWith {hint "The guards do not feel threatened in any way!";};
-//if(life_inv_blastingcharge < 1) exitWith {hint "You need a blasting charge to initiate a prison break!";};	
 if({side _x == west} count playableUnits < 2) exitWith {hint "There needs to be two or more cops online for you to initiate a robbery!";}; // Spectral does not want a limit on when to jailbreak
 if(_unit getVariable["inbreakout",false]) exitWith {hint "Someone is already breaking out the prisoners!";};
 if(time - (_unit getVariable["lastbreakout",-9000]) < 30*60) exitWith {hint "The jail is currently under lockdown and you are unable to get near to the walls."};
@@ -19,9 +18,7 @@ _unit setVariable["inbreakout",true,true];
 
  //Give the cops a hint
   [0,"%1 is attempting to break prisoners out of the jail! Go and stop them fast!",true,[]] remoteExecCall ["life_fnc_broadcast",west];
-[[4, format["%1 is attempting to break prisoners out of the jail!", name player]],"life_fnc_broadcast",true,false] spawn life_fnc_MP; //Give everyone a systemchat
-
-//hint "You are currently breaking prisoners out of the prison, you need to stay within 50 meters of your current location or you will stop the breakout. The breakout will take around four minutes to complete.";
+  hint "You are currently hacking the prison gates, you need to stay within 1000 meters of your current location or you will stop the breakout. The breakout will take around four minutes to complete.";
 
 [[_unit,player],"life_fnc_breakoutTimer",group player, false] spawn life_fnc_MP; //Show the countdown to all prisoners, cops and the player.
 [[_unit,player],"life_fnc_breakoutTimer",west, false] spawn life_fnc_MP;
