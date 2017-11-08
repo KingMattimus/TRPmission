@@ -10,7 +10,7 @@ private _altisArray = ["Land_i_Shop_01_V1_F","Land_i_Shop_01_V2_F","Land_i_Shop_
 private _tanoaArray = ["Land_House_Small_01_F"];
 private _spawnBuildings = [[["Altis", _altisArray], ["Tanoa", _tanoaArray]]] call TON_fnc_terrainSort;
 
-if ((FETCH_CONST(life_life_donorlevel)) < 1 && (FETCH_CONST(life_adminlevel) isEqualTo 0)) exitWith {
+if ((FETCH_CONST(life_donorlevel)) < 1 && (FETCH_CONST(life_adminlevel) isEqualTo 0)) exitWith {
     ["Notwhitelisted",false,true] call BIS_fnc_endMission;
     sleep 35;
 };
