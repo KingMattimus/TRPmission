@@ -734,8 +734,8 @@ will modify the virtual space and the price of the vehicle, but other informatio
         price = 30000;
         textures[] = {
             { "Black", "cop", {
-                 "\textures\hunter1.jpg",
-                 "\textures\Hunter2.jpg"
+                 "textures\Hunter1.jpg",
+                 "textures\Hunter2.jpg"
             }, "" }
         };
     };
