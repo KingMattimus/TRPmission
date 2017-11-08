@@ -4,10 +4,10 @@
 */
 private["_pdoor1","_pdoor2","_pdoor3","_pdoor4"]
 _unit = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
-_pdoor1 = missionNamespace getVariable [prisondoor1 , objNull];
-_pdoor2 = missionNamespace getVariable [prisondoor2 , objNull];
-_pdoor3 = missionNamespace getVariable [prisondoor3 , objNull];
-_pdoor4 = missionNamespace getVariable [prisondoor4 , objNull];
+_pdoor1 = missionNamespace getVariable ["prisondoor1" , objNull];
+_pdoor2 = missionNamespace getVariable ["prisondoor2" , objNull];
+_pdoor3 = missionNamespace getVariable ["prisondoor3" , objNull];
+_pdoor4 = missionNamespace getVariable ["prisondoor4" , objNull];
 if(isNull _unit) exitWith {};
 if(!alive player) exitWith {};
 if(playerSide != civilian) exitWith {hint "Only civilians can do this!";};
