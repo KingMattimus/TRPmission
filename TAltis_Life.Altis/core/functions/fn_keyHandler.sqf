@@ -74,6 +74,47 @@ switch (_code) do {
             _handled = true;
         };
     };
+	
+	//Open Wanted
+	case 2:
+	{
+		if (player getVariable["restrained",false]) then
+		{
+			hint "You cannot the wanted menu when you're restrained!";
+		}
+		else
+		{
+			if(dialog) exitWith {};
+			[] call life_fnc_wantedMenu;
+		};
+	};
+	
+	//2 Cellphone
+	case 3:
+	{
+		if (player getVariable["restrained",false]) then
+		{
+			hint "You cannot open your cell phone when you're restrained!";
+		}
+		else
+		{
+			createDialog "Life_cell_phone";
+		};
+	};
+	
+	//3 Market
+	case 4:
+	{
+		if (playerSide == civilian && player getVariable["restrained",false]) then
+		{
+			hint "You cannot open the market when you're restrained! [ONLY FOR CIVILIAN USE]";
+		}
+		else
+		{
+			if(dialog) exitWith {};
+			createDialog "life_dynmarket_prices";
+		};
+	};
 
     //Surrender (Shift + B)
     case 48: {
@@ -200,6 +241,33 @@ switch (_code) do {
 
         if (!_alt && !_ctrlKey) then { [] call life_fnc_radar; };
     };
+	
+	//Restraining or robbing (Shift + R)
+	case 19:
+	{
+		if(_shift) then {_handled = true;};
+		if(_shift && playerSide == west && !isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && ((side cursorTarget == civilian) or (side cursorTarget == independent)) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable "Escorting") && !(cursorTarget getVariable "restrained") && speed cursorTarget < 1) then
+		{
+			[] call life_fnc_restrainAction;
+		};
+	};	
+	
+	 // O, police gate opener
+	case 24:
+	{
+		if (!_shift && !_alt && !_ctrlKey && ((playerSide == west) OR (playerSide == independent)) && (vehicle player != player)) then {
+			[] call life_fnc_copOpener;
+		} else {
+			if ((playerSide == west) && (vehicle player == player)) then 
+			{
+				if(life_inv_spikeStrip > 0) then 
+				{ 
+					[false,"spikeStrip",1] call life_fnc_handleInv;
+					[] spawn life_fnc_spikeStrip;
+				};
+			};
+		};
+	};
 
     //Y Player Menu
     case 21: {
@@ -381,6 +449,25 @@ switch (_code) do {
             };
         };
     };
+};
+
+if (_code in (actionKeys "User11")) then {
+	closeDialog 0;
+	if(([false,"redgull",1] call life_fnc_handleInv)) then
+	{
+		life_thirst = 100;
+		player setFatigue 0;
+		life_redgull_effect = time;
+		titleText["You can now run farther for 3 minutes","PLAIN"];
+		player enableFatigue false;
+		[] spawn
+		{
+			waitUntil {!alive player OR ((time - life_redgull_effect) > (3 * 60))};
+			player enableFatigue true;
+		};
+		[] call life_fnc_hudUpdate;
+	};
+	_handled = true;
 };
 
 _handled;

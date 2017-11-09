@@ -140,6 +140,7 @@ class Life_Client_Core {
 		class copEnter {};
 		class seizeObjects {};
         class copSearch {};
+		class copOpener {};
         class copSiren {};
         class doorAnimate {};
         class fedCamDisplay {};
@@ -203,6 +204,7 @@ class Life_Client_Core {
         class isDamaged {};
         class giveDiff {};
         class handleDamage {};
+		class seatbelt {};
         class handleDowned {};
         class handleInv {};
         class handleItem {};
