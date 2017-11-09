@@ -4,10 +4,11 @@
 */
 private["_pdoor1","_pdoor2","_pdoor3","_pdoor4"];
 _unit = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
-_pdoor1 = missionNamespace getVariable ["prisondoor1" , objNull];
-_pdoor2 = missionNamespace getVariable ["prisondoor2" , objNull];
-_pdoor3 = missionNamespace getVariable ["prisondoor3" , objNull];
-_pdoor4 = missionNamespace getVariable ["prisondoor4" , objNull];
+_pdoor1 = nearestObject [[19405.539,22.411932,14294.325],"Land_BackAlley_01_l_gate_F"];
+_pdoor2 = nearestObject [[19405.23,22.355804,14289.15],"Land_BackAlley_01_l_gate_F"];
+_pdoor3 = nearestObject [[19381.594,22.553242,14315.517],"Land_BackAlley_01_l_gate_F"];
+_pdoor4 = nearestObject [[19379.746,22.60874,14315.628],"Land_BackAlley_01_l_gate_F"];
+
 if(isNull _unit) exitWith {};
 if(!alive player) exitWith {};
 if(playerSide != civilian) exitWith {hint "Only civilians can do this!";};
