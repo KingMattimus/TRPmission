@@ -32384,7 +32384,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				init="this setVariable ['bis_disabled_Door_1',1,true];";
+				init="";
 				name="PrisonDoor2";
 			};
 			id=1868;
@@ -32500,7 +32500,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				init="this setVariable ['bis_disabled_Door_1',1,true];";
+				init="";
 				name="prisondoor1";
 			};
 			id=1905;
@@ -32856,7 +32856,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				init="this setVariable ['bis_disabled_Door_1',1,true];";
+				init="";
 				name="prisondoor3";
 			};
 			id=1925;
@@ -32958,7 +32958,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				init="this setVariable ['bis_disabled_Door_1',1,true];";
+				init="";
 				name="prisondoor4";
 			};
 			id=1935;
