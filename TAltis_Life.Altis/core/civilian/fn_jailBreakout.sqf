@@ -69,10 +69,10 @@ _unit setVariable["inbreakout",false,true];
 if(_ok) then {
 	[] remoteExec ["life_fnc_jailBreakoutCompleted",[player]];
 	//unlock jail here 
-	_pdoor1 setVariable ['bis_disabled_Door_1',1,false];
-	_pdoor2 setVariable ['bis_disabled_Door_1',1,false];
-	_pdoor3 setVariable ['bis_disabled_Door_1',1,false];
-	_pdoor4 setVariable ['bis_disabled_Door_1',1,false];
+_pdoor1 setVariable ["bis_disabled_Door_1",1,false];
+_pdoor2 setVariable ["bis_disabled_Door_1",1,false];
+_pdoor3 setVariable ["bis_disabled_Door_1",1,false];
+_pdoor4 setVariable ["bis_disabled_Door_1",1,false];
 } else {
 	hint "You failed to break out any prisoners.";	
 	};
