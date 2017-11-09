@@ -198,6 +198,26 @@ _rsb setVariable ["bis_disabled_Door_1",1,true];
 _dome allowDamage false;
 _rsb allowDamage false;
 
+_pdoor1 = nearestObject [[19405.539,22.411932,14294.325],"Land_BackAlley_01_l_gate_F"];
+_pdoor2 = nearestObject [[19405.23,22.355804,14289.15],"Land_BackAlley_01_l_gate_F"];
+_pdoor3 = nearestObject [[19381.594,22.553242,14315.517],"Land_BackAlley_01_l_gate_F"];
+_pdoor4 = nearestObject [[19379.746,22.60874,14315.628],"Land_BackAlley_01_l_gate_F"];
+
+_pdoor1 setVariable ["locked",true,true];
+_pdoor2 setVariable ["locked",true,true];
+_pdoor3 setVariable ["locked",true,true];
+_pdoor4 setVariable ["locked",true,true];
+
+_pdoor1 setVariable ["bis_disabled_Door_1",1,true];
+_pdoor2 setVariable ["bis_disabled_Door_1",1,true];
+_pdoor3 setVariable ["bis_disabled_Door_1",1,true];
+_pdoor4 setVariable ["bis_disabled_Door_1",1,true];
+
+_pdoor1 allowDamage false;
+_pdoor2 allowDamage false;
+_pdoor3 allowDamage false;
+_pdoor4 allowDamage false;
+
 /* Tell clients that the server is ready and is accepting queries */
 life_server_isReady = true;
 publicVariable "life_server_isReady";
