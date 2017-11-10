@@ -13,7 +13,7 @@ _pdoor2 setVariable ["bis_disabled_Door_1",0,true];
 _pdoor3 setVariable ["bis_disabled_Door_1",0,true];
 _pdoor4 setVariable ["bis_disabled_Door_1",0,true];
 
-sleep 300
+sleep 300;
 
 _pdoor1 setVariable ["locked",true,true];
 _pdoor2 setVariable ["locked",true,true];

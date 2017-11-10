@@ -55,7 +55,6 @@ _unit spawn {
 _time = time + (1 * 60);
 
 
-_ok = true;
 while {true} do {
 	hint "tick tock.";
 	if(round(_time - time) < 1) exitWith {_ok = true;};
