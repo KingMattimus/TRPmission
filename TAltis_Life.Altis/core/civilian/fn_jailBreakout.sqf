@@ -69,6 +69,7 @@ while (true) do{
 _unit setVariable["inbreakout",false,true]; 
 
 if(_ok) then {
+	hint "The prisoners have been released";
 	[] remoteExec ["life_fnc_jailBreakoutCompleted",[player]];
 	//unlock jail here 
 	
