@@ -24,8 +24,10 @@ _unit setVariable["inbreakout",true,true];
 //Give the cops a hint
 [0,"%1 is attempting to break prisoners out of the jail! Go and stop them fast!",true,[]] remoteExecCall ["life_fnc_broadcast",west];
 hint "You are currently hacking the prison gates, you need to stay within 1000 meters of your current location or you will stop the breakout. The breakout will take around four minutes to complete.";
-[[1,2],"STR_ISTR_AlertJail",true,[]] remoteExecCall ["life_fnc_broadcast",RCLIENT];
-[] remoteExec ["life_fnc_demoChargeTimer",[west,player]];
+[0,"STR_ISTR_AlertJail",true,[]] remoteExecCall ["life_fnc_broadcast",west];
+[0,"STR_ISTR_AlertJail",true,[]] remoteExecCall ["life_fnc_broadcast",civilian];
+[0,"STR_ISTR_AlertJail",true,[]] remoteExecCall ["life_fnc_broadcast",independent];
+[] remoteExec ["life_fnc_jailChargeTimer",[west,player]];
 
 // Charge all the players in the group with doing a jailbreak
 /*{
@@ -50,13 +52,13 @@ _unit spawn {
 
 */
 
-_time = time + (1 * 60);
+_time = time + (0.1 * 60);
 
 jailDefused = false;
 
+_ok = false;
 
-_ok = true;
-while {true} do {
+for "_i" from 0 to 1 step 0 do {
 	hint "tick tock.";
 	if(round(_time - time) < 1) exitWith {_ok = true;};
 	if (!alive player) exitWith {};
