@@ -59,7 +59,7 @@ jailDefused = false;
 hint "phase 1"
 while {true} do {
 	hint "tick tock.";
-	if(round(_time - time) < 1) exitWith {_unit setVariable["jailsuccess",true,true];};
+	if(round(_time - time) < 1) exitWith {life_jailsuccess = true};
 	if (!alive player) exitWith {};
     if (life_istazed) exitWith {}; //Tazed
     if (life_isknocked) exitWith {}; //Knocked
@@ -68,7 +68,7 @@ while {true} do {
 hint "phase 2"
 _unit setVariable["inbreakout",false,true]; 
 
-if(_unit getVariable["jailsuccess",false]) then {
+if(life_jailsuccess) then {
 	hint "The prisoners have been released";
 	[] remoteExec ["life_fnc_jailBreakoutCompleted",[player]];
 	//unlock jail here 
