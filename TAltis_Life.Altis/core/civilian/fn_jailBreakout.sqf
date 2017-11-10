@@ -54,11 +54,9 @@ _unit spawn {
 
 _time = time + (1 * 60);
 
-hint "phase 1";
 
 _ok = true;
-
- while (true) do{
+while {true} do {
 	hint "tick tock.";
 	if(round(_time - time) < 1) exitWith {_ok = true;};
 	if (!alive player) exitWith {_ok = false;};
@@ -66,7 +64,6 @@ _ok = true;
     if (life_isknocked) exitWith {_ok = false;}; //Knocked
 	sleep 1;
 };
-hint "phase 2";
 _unit setVariable["inbreakout",false,true]; 
 
 if(_ok) then {
