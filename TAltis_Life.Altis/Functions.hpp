@@ -108,6 +108,7 @@ class Life_Client_Core {
         class civLoadout {};
         class civMarkers {};
         class demoChargeTimer {};
+        class jailChargeTimer {};
         class freezePlayer {};
         class jail {};
         class jailMe {};
