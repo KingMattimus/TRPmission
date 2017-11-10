@@ -60,7 +60,7 @@ _ok = true;
 while {true} do {
 	hint "tick tock.";
 	if(round(_time - time) < 1) exitWith {_ok = true;};
-	if (!alive player) exitWith {_ok = false;};
+	if (!life_is_alive) exitWith {_ok = false;};
     if (life_istazed) exitWith {_ok = false;}; //Tazed
     if (life_isknocked) exitWith {_ok = false;}; //Knocked
 	sleep 1;
