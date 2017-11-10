@@ -198,7 +198,7 @@ _rsb setVariable ["bis_disabled_Door_1",1,true];
 _dome allowDamage false;
 _rsb allowDamage false;
 
-_pdoor1 = nearestObject [[19380.8,14315.6,0.00146675]],"Land_BackAlley_01_l_gate_F"];
+_pdoor1 = nearestObject [[19380.8,14315.6,0.00146675],"Land_BackAlley_01_l_gate_F"];
 _pdoor2 = nearestObject [[19380.6,14315.5,0.00141144],"Land_BackAlley_01_l_gate_F"];
 _pdoor3 = nearestObject [[19405,14288.3,0.00144005],"Land_BackAlley_01_l_gate_F"];
 _pdoor4 = nearestObject [[19405.3,14293.5,0.00141716],"Land_BackAlley_01_l_gate_F"];
