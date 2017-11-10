@@ -54,11 +54,11 @@ _unit spawn {
 
 _time = time + (1 * 60);
 
-hint "phase 1"
+hint "phase 1";
 
 _ok = true;
 
-while {true} do {
+ while (true) do{
 	hint "tick tock.";
 	if(round(_time - time) < 1) exitWith {_ok = true;};
 	if (!alive player) exitWith {_ok = false;};
