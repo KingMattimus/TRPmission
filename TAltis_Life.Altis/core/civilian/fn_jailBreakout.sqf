@@ -58,7 +58,7 @@ jailDefused = false;
 
 _ok = false;
 
-for "_i" from 0 to 1 step 0 do {
+while (true) do{
 	hint "tick tock.";
 	if(round(_time - time) < 1) exitWith {_ok = true;};
 	if (!alive player) exitWith {};
