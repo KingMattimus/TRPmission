@@ -50,7 +50,6 @@ _time = time + (12 * 60);
 
 jailDefused = false;
 
-
 _ok = true;
 while {true} do {
 	if(round(_time - time) < 1) exitWith {_ok = true;};

@@ -27,7 +27,7 @@ hint "You are currently hacking the prison gates, you need to stay within 1000 m
 [0,"STR_ISTR_AlertJail",true,[]] remoteExecCall ["life_fnc_broadcast",west];
 [0,"STR_ISTR_AlertJail",true,[]] remoteExecCall ["life_fnc_broadcast",civilian];
 [0,"STR_ISTR_AlertJail",true,[]] remoteExecCall ["life_fnc_broadcast",independent];
-[] remoteExec ["life_fnc_demoChargeTimer",[west,player]];
+[] remoteExec ["life_fnc_jailChargeTimer",[west,player]];
 
 // Charge all the players in the group with doing a jailbreak
 /*{
@@ -52,7 +52,9 @@ _unit spawn {
 
 */
 
-_time = time + (1 * 60);
+_time = time + (12 * 60);
+
+jailDefused = false;
 
 _ok = true;
 while {true} do {
