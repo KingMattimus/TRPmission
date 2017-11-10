@@ -50,7 +50,7 @@ _unit spawn {
 
 */
 
-_time = time + (12 * 60);
+_time = time + (1 * 60);
 
 jailDefused = false;
 
@@ -61,7 +61,6 @@ while {true} do {
 	if (!alive player) exitWith {};
     if (life_istazed) exitWith {}; //Tazed
     if (life_isknocked) exitWith {}; //Knocked
-    if (life_interrupted) exitWith {};
 	sleep 1;
 };
 _unit setVariable["inbreakout",false,true]; 
