@@ -54,21 +54,22 @@ _unit spawn {
 
 _time = time + (1 * 60);
 
-jailDefused = false;
-
 hint "phase 1"
+
+_ok = true;
+
 while {true} do {
 	hint "tick tock.";
-	if(round(_time - time) < 1) exitWith {life_jailsuccess = true};
-	if (!alive player) exitWith {};
-    if (life_istazed) exitWith {}; //Tazed
-    if (life_isknocked) exitWith {}; //Knocked
+	if(round(_time - time) < 1) exitWith {_ok = true;};
+	if (!alive player) exitWith {_ok = false;};
+    if (life_istazed) exitWith {_ok = false;}; //Tazed
+    if (life_isknocked) exitWith {_ok = false;}; //Knocked
 	sleep 1;
 };
 hint "phase 2"
 _unit setVariable["inbreakout",false,true]; 
 
-if(life_jailsuccess) then {
+if(_ok) then {
 	hint "The prisoners have been released";
 	[] remoteExec ["life_fnc_jailBreakoutCompleted",[player]];
 	//unlock jail here 
@@ -84,7 +85,3 @@ _pdoor4 setVariable ["bis_disabled_Door_1",1,false];
 } else {
 	hint "You failed to break out any prisoners.";	
 	};
-	
-	
-sleep 10;
-_unit setVariable["jailsuccess",false,true];
