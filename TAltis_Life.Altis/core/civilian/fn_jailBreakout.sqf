@@ -66,7 +66,7 @@ _ok = true;
     if (life_isknocked) exitWith {_ok = false;}; //Knocked
 	sleep 1;
 };
-hint "phase 2"
+hint "phase 2";
 _unit setVariable["inbreakout",false,true]; 
 
 if(_ok) then {
