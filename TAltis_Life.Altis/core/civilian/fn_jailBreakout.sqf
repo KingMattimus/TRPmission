@@ -57,6 +57,7 @@ jailDefused = false;
 
 _ok = true;
 while {true} do {
+	hint "tick tock.";
 	if(round(_time - time) < 1) exitWith {_ok = true;};
 	if (!alive player) exitWith {};
     if (life_istazed) exitWith {}; //Tazed
@@ -68,6 +69,11 @@ _unit setVariable["inbreakout",false,true];
 if(_ok) then {
 	[] remoteExec ["life_fnc_jailBreakoutCompleted",[player]];
 	//unlock jail here 
+	
+_pdoor1 setVariable ["locked",false,true];
+_pdoor2 setVariable ["locked",false,true];
+_pdoor3 setVariable ["locked",false,true];
+_pdoor4 setVariable ["locked",false,true];	
 _pdoor1 setVariable ["bis_disabled_Door_1",1,false];
 _pdoor2 setVariable ["bis_disabled_Door_1",1,false];
 _pdoor3 setVariable ["bis_disabled_Door_1",1,false];
