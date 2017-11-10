@@ -52,18 +52,20 @@ _unit spawn {
 
 */
 
-_time = time + (12 * 60);
+_time = time + (1 * 60);
 
 jailDefused = false;
 
 _ok = true;
-while {true} do {
-	hint "tick tock.";
-	if(round(_time - time) < 1) exitWith {_ok = true;};
-	if (!life_is_alive) exitWith {_ok = false;};
-    if (life_istazed) exitWith {_ok = false;}; //Tazed
-    if (life_isknocked) exitWith {_ok = false;}; //Knocked
-	sleep 1;
+[] spawn {
+	while {true} do {
+		hint "tick tock.";
+		if(round(_time - time) < 1) exitWith {_ok = true;};
+		if (!life_is_alive) exitWith {_ok = false;};
+		if (life_istazed) exitWith {_ok = false;}; //Tazed
+		if (life_isknocked) exitWith {_ok = false;}; //Knocked
+		sleep 1;
+	};
 };
 _unit setVariable["inbreakout",false,true]; 
 
