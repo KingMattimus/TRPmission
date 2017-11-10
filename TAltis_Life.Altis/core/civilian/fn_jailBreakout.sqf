@@ -56,7 +56,7 @@ _time = time + (0.1 * 60);
 
 jailDefused = false;
 
-_ok = false;
+_ok = true;
 
 while (true) do{
 	hint "tick tock.";
