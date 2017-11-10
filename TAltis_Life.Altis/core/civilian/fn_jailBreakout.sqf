@@ -52,7 +52,7 @@ _unit spawn {
 
 */
 
-_time = time + (0.1 * 60);
+_time = time + (1 * 60);
 
 jailDefused = false;
 
