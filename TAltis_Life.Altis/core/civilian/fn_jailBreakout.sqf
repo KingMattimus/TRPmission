@@ -69,16 +69,8 @@ _unit setVariable["inbreakout",false,true];
 if(_ok) then {
 	hint "The prisoners have been released";
 	[] remoteExec ["life_fnc_jailBreakoutCompleted",[player]];
+	[] spawn life_fnc_unlockJail;
 	//unlock jail here 
-	
-_pdoor1 setVariable ["locked",false,true];
-_pdoor2 setVariable ["locked",false,true];
-_pdoor3 setVariable ["locked",false,true];
-_pdoor4 setVariable ["locked",false,true];	
-_pdoor1 setVariable ["bis_disabled_Door_1",1,false];
-_pdoor2 setVariable ["bis_disabled_Door_1",1,false];
-_pdoor3 setVariable ["bis_disabled_Door_1",1,false];
-_pdoor4 setVariable ["bis_disabled_Door_1",1,false];
 } else {
 	hint "You failed to break out any prisoners.";	
 	};

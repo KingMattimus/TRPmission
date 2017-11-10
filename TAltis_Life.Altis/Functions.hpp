@@ -115,6 +115,7 @@ class Life_Client_Core {
         class knockedOut {};
         class knockoutAction {};
         class removeLicenses {};
+        class unlockJail {};
         class robPerson {};
         class robReceive {};
         class tazed {};
