@@ -59,7 +59,6 @@ jailDefused = false;
 _ok = true;
 [] spawn {
 	while {true} do {
-		hint "tick tock.";
 		if(round(_time - time) < 1) exitWith {_ok = true;};
 		if (!life_is_alive) exitWith {_ok = false;};
 		if (life_istazed) exitWith {_ok = false;}; //Tazed
