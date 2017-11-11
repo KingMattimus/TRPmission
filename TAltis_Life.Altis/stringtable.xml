@@ -7220,6 +7220,17 @@
         </Key>
     </Package>
     <Package name="More_Item_Strings">
+		<Key ID="STR_ISTR_AlertJail">
+            <Original>Some one is attempting to Hack the prisons security system.</Original>
+            <Czech>Někdo se pokouší Hackovat bezpečnostní systém věznic.</Czech>
+            <Spanish>Esto solo se puede usar en una bóveda.</Spanish>
+            <Russian></Russian>
+            <German>Dies kann nur an einem Tresor benutzt werden.</German>
+            <French>Quelqu'un tente de pirater le système de sécurité des prisons.</French>
+            <Italian>Qualcuno sta tentando di hackerare il sistema di sicurezza delle carceri.</Italian>
+            <Portuguese>Alguém está tentando cortar o sistema de segurança das prisões.</Portuguese>
+            <Polish>Ktoś próbuje zhakować system bezpieczeństwa więzień.</Polish>
+        </Key>
         <Key ID="STR_ISTR_Blast_VaultOnly">
             <Original>This can only be used on a vault.</Original>
             <Czech>To lze použít pouze v trezoru.</Czech>

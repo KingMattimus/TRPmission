@@ -3,9 +3,11 @@
 /*
 	File: fn_jailBreakoutCompleted.sqf
 */
+hint "jail breakout fired";
 if(isDedicated) exitWith {};
+hint "isdedicated";
 if(!life_is_arrested) exitWith {}; //We dont need to be broken out, as we are not in jail!
-
+hint "variable is not getting set.";
 _action = [
 	format["%1 has broken into the jail from the outside, escape now?",_this select 0],
 	"Breakout",
