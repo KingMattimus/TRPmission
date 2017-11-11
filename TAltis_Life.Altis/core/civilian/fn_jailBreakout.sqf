@@ -57,15 +57,13 @@ _time = time + (1 * 60);
 jailDefused = false;
 
 _ok = true;
-[] spawn {
-	while {true} do {
-		if(round(_time - time) < 1) exitWith {_ok = true;};
-		if (!life_is_alive) exitWith {_ok = false;};
-		if (life_istazed) exitWith {_ok = false;}; //Tazed
-		if (life_isknocked) exitWith {_ok = false;}; //Knocked
-		sleep 1;
-	};
+while {true} do {
+	if(round(_time - time) < 1) exitWith {_ok = true;};
+	if (jailDefused) exitWith {_ok = false;};
+	sleep 1;
 };
+
+
 _unit setVariable["inbreakout",false,true]; 
 
 if(_ok) then {
