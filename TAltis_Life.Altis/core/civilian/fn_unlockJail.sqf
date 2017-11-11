@@ -7,10 +7,10 @@ _pdoor1 setVariable ["locked",false,true];
 _pdoor2 setVariable ["locked",false,true];
 _pdoor3 setVariable ["locked",false,true];
 _pdoor4 setVariable ["locked",false,true];
-_pdoor1 animateSource [format ["Door_1_source", 0], 0];
-_pdoor2 animateSource [format ["Door_1_source", 0], 0];
-_pdoor3 animateSource [format ["Door_1_source", 0], 0];
-_pdoor4 animateSource [format ["Door_1_source", 0], 0];
+_pdoor1 animateSource [format ["Door_%1_source", 0], 0];
+_pdoor2 animateSource [format ["Door_%1_source", 0], 0];
+_pdoor3 animateSource [format ["Door_%1_source", 0], 0];
+_pdoor4 animateSource [format ["Door_%1_source", 0], 0];
 
 
 
@@ -21,10 +21,10 @@ _pdoor3 setVariable ["bis_disabled_Door_1",0,true];
 _pdoor4 setVariable ["bis_disabled_Door_1",0,true];
 
 sleep 300;
-_pdoor1 animateSource [format ["Door_1_source", 0], 1];
-_pdoor2 animateSource [format ["Door_1_source", 0], 1];
-_pdoor3 animateSource [format ["Door_1_source", 0], 1];
-_pdoor4 animateSource [format ["Door_1_source", 0], 1];
+_pdoor1 animateSource [format ["Door_%1_source", 0], 1];
+_pdoor2 animateSource [format ["Door_%1_source", 0], 1];
+_pdoor3 animateSource [format ["Door_%1_source", 0], 1];
+_pdoor4 animateSource [format ["Door_%1_source", 0], 1];
 _pdoor1 setVariable ["locked",true,true];
 _pdoor2 setVariable ["locked",true,true];
 _pdoor3 setVariable ["locked",true,true];
