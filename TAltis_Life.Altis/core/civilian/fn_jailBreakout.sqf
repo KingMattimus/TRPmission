@@ -29,6 +29,28 @@ hint "You are currently hacking the prison gates, you need to stay within 1000 m
 [0,"STR_ISTR_AlertJail",true,[]] remoteExecCall ["life_fnc_broadcast",independent];
 [] remoteExec ["life_fnc_demoChargeTimer",[west,player]];
 
+// Charge all the players in the group with doing a jailbreak
+/*{
+	if (EQUAL(group _x,group player)) then {
+		        if (life_HC_isActive) then {
+            [getPlayerUID player,profileName,"26"] remoteExecCall ["HC_fnc_wantedAdd",HC_Life];
+        } else {
+            [getPlayerUID player,profileName,"26"] remoteExecCall ["life_fnc_wantedAdd",RSERV];
+        };
+	};
+} foreach playableUnits; */
+
+
+/*
+//Alarm Bell
+_unit spawn {
+	for "_i" from 0 to 20 do {
+		[[_this, "jailbreak",1000],"life_fnc_playSound",true,false] spawn life_fnc_MP;	
+		sleep 2.087;
+	};
+};
+
+*/
 
 _time = time + (1 * 60);
 
@@ -49,7 +71,7 @@ _unit setVariable["inbreakout",false,true];
 
 if(_ok) then {
 	hint "The prisoners have been released";
-	[] spawm life_fnc_jailBreakoutCompleted;
+	[] remoteExec ["life_fnc_jailBreakoutCompleted",[player]];
 	[] spawn life_fnc_unlockJail;
 	//unlock jail here 
 } else {
