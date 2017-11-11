@@ -7,7 +7,7 @@
     Once word is received by the server the rest of the jail execution is completed.
 */
 private ["_time","_bail","_esc","_countDown"];
-_pdoor1 = nearestObject [[19380.8,14315.6,0.00146675],"Land_BackAlley_01_l_gate_F"];
+
 params [
     ["_ret",[],[[]]],
     ["_bad",false,[false]]
@@ -30,6 +30,8 @@ _bail = false;
     };
     life_canpay_bail = true;
 };
+_pdoor1 = nearestObject [[19380.8,14315.6,0.00146675],"Land_BackAlley_01_l_gate_F"];
+_runforit = _pdoor1 getVariable "locked";
 
 for "_i" from 0 to 1 step 0 do {
     if ((round(_time - time)) > 0) then {
@@ -46,7 +48,7 @@ for "_i" from 0 to 1 step 0 do {
     if (player distance (getMarkerPos "jail_marker") > _escDist) exitWith {
         _esc = true;
     };
-	if(player distance (getMarkerPos "jail_marker") > 40 && !(_pdoor1 getVariable "locked") then
+	if(player distance (getMarkerPos "jail_marker") > 40 && !_runforit then
 	{
 		player setPosAsl [19403.7,14314.6,0.00143433];
 	};
