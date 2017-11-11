@@ -17,16 +17,16 @@ _pdoor1 setVariable ["bis_disabled_Door_1",0,true];
 _pdoor2 setVariable ["bis_disabled_Door_1",0,true];
 _pdoor3 setVariable ["bis_disabled_Door_1",0,true];
 _pdoor4 setVariable ["bis_disabled_Door_1",0,true];
-(_pdoor1 select 0) animate [(_this select 1), 1];
-(_pdoor2 select 0) animate [(_this select 1), 1];
-(_pdoor3 select 0) animate [(_this select 1), 1];
-(_pdoor4 select 0) animate [(_this select 1), 1];
-
+_pdoor1 animateSource ["Door_1_source", 1];
+_pdoor3 animateSource ["Door_1_source", 1];
+_pdoor4 animateSource ["Door_1_source", 1];
+_pdoor2 animateSource ["Door_1_source", 1];
+//Wait for a bit then close and lock doors
 sleep 300;
-(_pdoor1 select 0) animate [(_this select 1), 0];
-(_pdoor2 select 0) animate [(_this select 1), 0];
-(_pdoor3 select 0) animate [(_this select 1), 0];
-(_pdoor4 select 0) animate [(_this select 1), 0];
+_pdoor1 animateSource ["Door_1_source", 0];
+_pdoor3 animateSource ["Door_1_source", 0];
+_pdoor4 animateSource ["Door_1_source", 0];
+_pdoor2 animateSource ["Door_1_source", 0];
 _pdoor1 setVariable ["locked",true,true];
 _pdoor2 setVariable ["locked",true,true];
 _pdoor3 setVariable ["locked",true,true];
