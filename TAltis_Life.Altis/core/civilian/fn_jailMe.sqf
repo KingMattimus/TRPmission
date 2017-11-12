@@ -49,10 +49,10 @@ for "_i" from 0 to 1 step 0 do {
         _esc = true;
     };
 	// Commenting out for now
-	//if (player distance (getMarkerPos "jail_marker") > 40 && _runforit) then
-	//{
-	//	player setPosAsl [19403.7,14314.6,0.00143433];
-	//};
+	if ((player distance (getMarkerPos "jail_marker")) &&(_pdoor1 getVariable ["locked",true])) then
+	{
+		player setPosAsl [19403.7,14314.6,0.00143433];
+	};
 	
     if (life_bail_paid) exitWith {
         _bail = true;
