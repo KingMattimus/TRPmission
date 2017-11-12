@@ -49,7 +49,7 @@ for "_i" from 0 to 1 step 0 do {
         _esc = true;
     };
 	// Commenting out for now
-	if ((player distance (getMarkerPos "jail_marker")> 40) &&(_pdoor1 getVariable ["locked",true])) then
+	if ((player distance (getMarkerPos "jail_marker") > 40) &&(_pdoor1 getVariable ["locked",true])) then
 	{
 		player setPosAsl [19403.7,14314.6,0.00143433];
 	};
