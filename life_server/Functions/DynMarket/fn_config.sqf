@@ -41,16 +41,17 @@ DYNMARKET_Items_Groups =
 			["salt_refined",-1,200,1850],
 			["glass",-1,200,1450],
 			["diamond_cut",-1,2002530],
-			["cement",-1,200,2350]
+			["cement",-1,200,2350],
+			["heroin_processed",-1,1000,6300],
+			["marijuana",-1,1000,6250],
+			["cocaine_processed",-1,1000,6300]
 		],
 		0.5
 	],
 	["Illegal", 
 		[
 		
-			["heroin_processed",-1,1000,6300],
-			["marijuana",-1,1000,6250],
-			["cocaine_processed",-1,1000,6300]
+			
 		
 
 
