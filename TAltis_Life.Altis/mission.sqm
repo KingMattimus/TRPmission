@@ -8,7 +8,7 @@ class EditorData
 	toggles=517;
 	class ItemIDProvider
 	{
-		nextID=2509;
+		nextID=2510;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={20949.113,17.61614,19248.666};
-		dir[]={-0.91497993,-0.3388837,0.21928833};
-		up[]={-0.32960027,0.9408043,0.078993171};
-		aside[]={0.23307759,-1.6878766e-007,0.97251326};
+		pos[]={21052.781,19.341858,19293.912};
+		dir[]={-0.14142413,-0.71026117,0.68971509};
+		up[]={-0.1426733,0.70390463,0.69580972};
+		aside[]={0.97969526,5.537222e-007,0.20088269};
 	};
 };
 binarizationWanted=0;
@@ -456,7 +456,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=1250;
+		items=1251;
 		class Item0
 		{
 			dataType="Marker";
@@ -38274,7 +38274,6 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				presence=0.80414009;
 			};
 			id=2349;
 			type="Box_IND_Ammo_F";
@@ -38983,13 +38982,14 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={20882.377,12.569819,19236.514};
+				position[]={20892.994,12.569819,19244.703};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				presence=0.19598691;
+				dynamicSimulation=1;
 			};
 			id=2381;
 			type="O_T_LSV_02_armed_F";
@@ -40324,6 +40324,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				presence=0.76613045;
 			};
 			id=2423;
 			type="C_IDAP_supplyCrate_F";
@@ -41824,6 +41825,24 @@ class Mission
 			id=2508;
 			type="Land_Shed_06_F";
 			atlOffset=-0.00078487396;
+		};
+		class Item1250
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={21049.789,15.820977,19294.16};
+				angles[]={6.249867,0,6.2685246};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="house = nearestBuilding (getPosATL this); house hideObject true;";
+			};
+			id=2509;
+			type="Land_Wrench_F";
+			atlOffset=-9.5367432e-007;
 		};
 	};
 };
