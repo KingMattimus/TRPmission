@@ -8,7 +8,7 @@ class EditorData
 	toggles=517;
 	class ItemIDProvider
 	{
-		nextID=2510;
+		nextID=2511;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={21052.781,19.341858,19293.912};
-		dir[]={-0.14142413,-0.71026117,0.68971509};
-		up[]={-0.1426733,0.70390463,0.69580972};
-		aside[]={0.97969526,5.537222e-007,0.20088269};
+		pos[]={17594.914,153.76524,15915.048};
+		dir[]={0.55436379,-0.83227009,0.0048673465};
+		up[]={0.83224279,0.55436802,0.0073072719};
+		aside[]={0.0087794354,2.7840724e-007,-0.99996865};
 	};
 };
 binarizationWanted=0;
@@ -2080,7 +2080,7 @@ class Mission
 		class Item161
 		{
 			dataType="Marker";
-			position[]={19029.779,23.749619,14549.058};
+			position[]={17007.061,21.11919,15224.39};
 			name="chop_shop_4";
 			text="@STR_MAR_Chop_Shop";
 			type="o_armor";
@@ -24079,8 +24079,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={19028.809,23.678001,14554.516};
-						angles[]={0.0093286335,3.3768158,6.2818484};
+						position[]={17006.09,21.240824,15229.848};
+						angles[]={6.2525291,3.3768158,0.017329043};
 					};
 					side="Civilian";
 					flags=4;
