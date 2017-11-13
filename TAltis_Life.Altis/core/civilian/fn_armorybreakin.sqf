@@ -14,7 +14,7 @@ if(!alive player) exitWith {};
 if(playerSide != civilian) exitWith {hint "Only civilians can do this!";};
 if(vehicle player != player) exitWith {hint "You need to be outside of your vehicle!";};
 if(currentWeapon player == "" || currentWeapon player == "Binocular") exitWith {hint "The guards do not feel threatened in any way!";};
-//if({side _x == west} count playableUnits < 2) exitWith {hint "There needs to be two or more cops online for you to initiate a robbery!";}; // Spectral does not want a limit on when to jailbreak
+if({side _x == west} count playableUnits < 2) exitWith {hint "There needs to be two or more cops online for you to initiate a robbery!";}; // Spectral does not want a limit on when to jailbreak
 if(_unit getVariable["inarmory",false]) exitWith {hint "Someone is already breaking out the prisoners!";};
 if(time - (_unit getVariable["lastarmory",-9000]) < 30*60) exitWith {hint "The Armory is currently under lockdown and you are unable to get near to the walls."};
 
@@ -23,7 +23,7 @@ _unit setVariable["inarmory",true,true];
 
 //Give the cops a hint
 [0,"%1 is attempting to break into the armory! Go and stop them fast!",true,[]] remoteExecCall ["life_fnc_broadcast",west];
-hint "You are currently hacking the prison gates, you need to stay within 1000 meters of your current location or you will stop the breakout. The breakout will take around four minutes to complete.";
+hint "You are currently hacking the prison gates, you need to stay within 1000 meters of your current location or you will stop the breakout. The breakout will take around twelve minutes to complete.";
 [0,"STR_ISTR_AlertArm",true,[]] remoteExecCall ["life_fnc_broadcast",west];
 [0,"STR_ISTR_AlertArm",true,[]] remoteExecCall ["life_fnc_broadcast",civilian];
 [0,"STR_ISTR_AlertArm",true,[]] remoteExecCall ["life_fnc_broadcast",independent];
@@ -52,7 +52,7 @@ _unit spawn {
 
 */
 
-_time = time + (1 * 60);
+_time = time + (12 * 60);
 
 armoryDefused = false;
 

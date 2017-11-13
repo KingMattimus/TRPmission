@@ -218,6 +218,37 @@ _pdoor2 allowDamage false;
 _pdoor3 allowDamage false;
 _pdoor4 allowDamage false;
 
+_adoor1 animate ["Door_1_rot", 0];
+_adoor3 animate ["Door_1_rot", 0];
+_adoor4 animate ["Door_1_rot", 0];
+_adoor2 animate ["Door_1_rot", 0];
+
+_adoor1 setVariable ["locked",true,true];
+_adoor2 setVariable ["locked",true,true];
+_adoor3 setVariable ["locked",true,true];
+_adoor4 setVariable ["locked",true,true];
+
+_adoor1 setVariable ["bis_disabled_Door_1",1,true];
+_adoor2 setVariable ["bis_disabled_Door_1",1,true];
+_adoor3 setVariable ["bis_disabled_Door_1",1,true];
+_adoor4 setVariable ["bis_disabled_Door_1",1,true];
+
+//gates
+_agate1 animate ["Door_1_rot", 0];
+_agate1 animate ["Door_2_rot", 0];
+_agate2 animate ["Door_1_rot", 0];
+_agate2 animate ["Door_2_rot", 0];
+
+
+_agate2 setVariable ["locked",true,true];
+_agate1 setVariable ["locked",true,true];
+
+_agate1 setVariable ["bis_disabled_Door_1",1,true];
+_agate1 setVariable ["bis_disabled_Door_2",1,true];
+_agate2 setVariable ["bis_disabled_Door_1",1,true];
+_agate2 setVariable ["bis_disabled_Door_2",1,true];
+
+
 /* Tell clients that the server is ready and is accepting queries */
 life_server_isReady = true;
 publicVariable "life_server_isReady";
