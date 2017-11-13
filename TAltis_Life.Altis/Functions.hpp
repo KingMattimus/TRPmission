@@ -116,11 +116,13 @@ class Life_Client_Core {
         class knockoutAction {};
         class removeLicenses {};
         class unlockJail {};
+		class unlockarmory {};
         class robPerson {};
         class robReceive {};
         class tazed {};
 		class jailBreakout {}; 
 		class jailBreakoutCompleted {};
+		class armorybreakin {}; 
     };
 
     class Config {
