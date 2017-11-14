@@ -802,7 +802,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "#(argb,8,8,3)color(1,1,1,0.8)"
             }, "" },
 			{ "APD", "cop", {
-                "\texture\policelb.jpg"
+                "\texture\policelbd.jpg"
             }, "" }
         };
     };

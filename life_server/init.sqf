@@ -202,7 +202,12 @@ _pdoor1 = nearestObject [[19380.8,14315.6,0.00146675],"Land_BackAlley_01_l_gate_
 _pdoor2 = nearestObject [[19380.6,14315.5,0.00141144],"Land_BackAlley_01_l_gate_F"];
 _pdoor3 = nearestObject [[19405,14288.3,0.00144005],"Land_BackAlley_01_l_gate_F"];
 _pdoor4 = nearestObject [[19405.3,14293.5,0.00141716],"Land_BackAlley_01_l_gate_F"];
-
+_adoor1 = nearestObject [[20900.7,19212.5,0.001441],"Land_BackAlley_01_l_gate_F"];
+_adoor2 = nearestObject [[20903.4,19206.6,0.00144291],"Land_BackAlley_01_l_gate_F"];
+_adoor3 = nearestObject [[20907,19221.8,0.00143909],"Land_BackAlley_01_l_gate_F"];
+_adoor4 = nearestObject [[20904.3,19217.5,0.00143909],"Land_BackAlley_01_l_gate_F"];
+_agate1 = nearestObject [[20910.4,19236.1,0.00143719],"Land_Net_Fence_Gate_F"];
+_agate2 = nearestObject [[20914,19237.8,0.00143623],"Land_Net_Fence_Gate_F"];
 _pdoor1 setVariable ["locked",true,true];
 _pdoor2 setVariable ["locked",true,true];
 _pdoor3 setVariable ["locked",true,true];
