@@ -21,6 +21,30 @@ class SpyGlass {
     };
 };
 
+class GOM {
+	tag = "GOM"
+
+	class VehicleTuning
+	{
+		file = "scripts";
+		class roundNum{};
+		class killHint{};
+		class updateBoostDisplay{};
+		class updateSlider1{};
+		class updateSlider2{};
+		class updateLB{};
+		class installFromLB{};
+		class FOGmachine{};
+		class ejectionSeat{};
+		class vehTuning{};
+		class vehicleTuning{};
+		class bulletproofTyres{};
+		class GPSTracker{};
+
+
+	};
+};
+
 class Life_Client_Core {
     tag = "life";
 

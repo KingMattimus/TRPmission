@@ -30,7 +30,7 @@ class RscTitles {
 class CfgFunctions {
     #include "Functions.hpp"
 	#include "maverick\maverick_functions_master.cpp"
-	#include "GOM_functions.hpp"
+	//#include "GOM_functions.hpp"
 };
 
 class CfgSounds {

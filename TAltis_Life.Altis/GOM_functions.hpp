@@ -1,11 +1,10 @@
 //GOM_functions.hpp
 //by Grumpy Old Man
 //V0.9
-class CfgFunctions
-{
 
 	class GOM
 	{
+		tag = "GOM"
 
 		class VehicleTuning
 		{
@@ -31,9 +30,6 @@ class CfgFunctions
 
 	};
 
-
-
-};
 
 
 
