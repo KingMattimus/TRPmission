@@ -6,6 +6,8 @@ overviewText = "$STR_MISC_overviewText";    // Text to be displayed below the ov
 #include "dialog\MasterHandler.hpp"
 #include "config\Config_Master.hpp"
 #include "infiSTAR_AdminMenu.hpp"
+#include "GOM_defines.hpp"
+#include "GOM_dialogs.hpp"
 
 
 class CfgServer {
@@ -28,6 +30,7 @@ class RscTitles {
 class CfgFunctions {
     #include "Functions.hpp"
 	#include "maverick\maverick_functions_master.cpp"
+	#include "GOM_functions.hpp"
 };
 
 class CfgSounds {
