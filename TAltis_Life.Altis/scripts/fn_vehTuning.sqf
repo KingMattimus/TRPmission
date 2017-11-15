@@ -44,7 +44,7 @@ if (_IDs select 0 > -1) exitWith {};
 	_ID = _vehicle addaction ["Cruise-Control Off",{_this select 0 setvariable ["GOM_fnc_CruiseControl",-1]},nil,0,false,true,"","((vehicle _target getvariable [""GOM_fnc_CruiseControl"",-1])> 0) AND _this isEqualTo driver _target AND isEngineOn _target AND _target getvariable [""GOM_fnc_CruiseControlInstalled"",false]"];
 	_nitroActionIDs pushBack _ID;
 
-	_ID = _vehicle addaction [format ["Activate Nitro (%1)",actionKeysNames "DefaultAction"],{
+	_ID = _vehicle addaction [format ["Activate Nitro (%1)"],{
 
 	params ["_veh"];
 	_veh setvariable ["GOM_fnc_NitroActivated",true];
@@ -62,17 +62,17 @@ playSound "ZoomOut";
 },nil,0,false,true,"CarBack","(vehicle _target getvariable [""GOM_fnc_NitroActivated"",false]) AND _this isEqualTo driver _target AND _target getvariable ['GOM_fnc_NitroVolume',-1] > 0"];
 _nitroActionIDs pushBack _ID;
 
-_ID = _vehicle addaction ["Measure Performance",{
+//_ID = _vehicle addaction ["Measure Performance",{
 
-params ["_veh"];
-_veh setvariable ["GOM_fnc_nitroMeasuring",true];
-playSound "Topic_Selection";
-_acc = [_veh] spawn GOM_fnc_acceleration;
-_qm = [_veh] spawn GOM_fnc_quartermile
+//params ["_veh"];
+//_veh setvariable ["GOM_fnc_nitroMeasuring",true];
+//playSound "Topic_Selection";
+//_acc = [_veh] spawn GOM_fnc_acceleration;
+//_qm = [_veh] spawn GOM_fnc_quartermile
 
-},nil,0,false,true,"","(!(vehicle _target getvariable [""GOM_fnc_nitroMeasuring"",false])) AND _this isEqualTo driver _target"];
-_nitroActionIDs pushBack _ID;
-
+//},nil,0,false,true,"","(!(vehicle _target getvariable [""GOM_fnc_nitroMeasuring"",false])) AND _this isEqualTo driver _target"];
+//_nitroActionIDs pushBack _ID;
+//
 _ID = _vehicle addaction ["Check Nitro Volume",{
 
 params ["_veh"];
@@ -128,40 +128,7 @@ if (_veh getvariable ["GOM_fnc_CruiseControl",-1] > 0 AND isEngineOn _veh AND al
 
 };
 
-if (_playerDrives AND (_veh getvariable ['GOM_fnc_brakeType',0]) > 0 AND _veh getvariable ['GOM_fnc_braking',false]) then {
 
-	_getbrakeMulti = [0,0.3,0.6,0.9] select (_veh getvariable ['GOM_fnc_brakeType',0]);
-	_brakeMulti = (_getbrakeMulti * (16 / diag_fps));
-	_vel = velocity _veh;
-	_dir = getDirVisual _veh;
-	_vel params ["_velX","_velY","_velZ"];
-
-	_calc = [
-	_velX - (_brakeMulti * (sin _dir)),
-	_velY - (_brakeMulti * (cos _dir)),
-	_velZ -0.008
-	];
-
-	_speed = speed _veh;
-	_onGround = isTouchingGround _veh;
-
-	if (_speed > 10 AND _onGround) then {
-
-		_veh setVelocity _calc;
-
-	};
-
-	if (_speed > 10 AND !_onGround) then {
-
-		_veh setVelocity [
-		_velX,
-		_velY,
-		-0.008
-		];
-
-	};
-
-};
 
 if (_playerDrives AND _veh getvariable ["GOM_fnc_calcVel",false] AND  _veh getvariable ['GOM_fnc_NitroVolume',1] > 0) then {
 
