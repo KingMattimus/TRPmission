@@ -131,6 +131,10 @@ if (!isNull _killer && {!(_killer isEqualTo _unit)}) then {
     life_removeWanted = true;
 };
 
+
+if (playerSide isEqualTo civilian then {
+	[_unit] call life_fnc_dropItems;
+}; 
 [_unit] call life_fnc_dropItems;
 
 life_action_inUse = false;
