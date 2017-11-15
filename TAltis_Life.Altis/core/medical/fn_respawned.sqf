@@ -29,7 +29,7 @@ player setVariable ["Reviving",nil,true];
 switch (playerSide) do
 {
     case west: {
-        _handle = [] spawn life_fnc_copLoadout;
+        _handle = [life_save_gear] spawn life_fnc_loadDeadGear;
     };
     case civilian: {
         _handle = [] spawn life_fnc_civLoadout;
