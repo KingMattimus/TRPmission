@@ -28,7 +28,7 @@ this addAction ["Tune Vehicle", {
 ctrlEnable [1604,false];
 ctrlEnable [1620,false];
 ctrlEnable [1621,false];
-	_cars = this nearEntities [ ["Car", "Motorcycle", "Tank", "Armor"], 25];
+	_cars = _unit nearEntities [ ["Car", "Motorcycle", "Tank", "Armor"], 25];
 	(findDisplay 66)setvariable ["GOM_fnc_vehTuningCars", _cars];
 	if (count _cars isEqualTo 0) exitwith {
 
